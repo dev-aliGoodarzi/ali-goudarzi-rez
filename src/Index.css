@@ -1,0 +1,34 @@
+@font-face {
+  font-family: main-font-regular;
+  src: url("./Fonts/CormorantGaramond-Regular.ttf");
+}
+
+@font-face {
+  font-family: main-font-bold;
+  src: url("./Fonts/CormorantGaramond-Bold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  font-size: 62.5%;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body #root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=Index.css.map */

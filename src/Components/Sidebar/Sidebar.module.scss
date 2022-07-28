@@ -1,0 +1,97 @@
+.asideContainer {
+  width: 4.4rem;
+  height: 100vh;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .top {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      width: 100%;
+      height: 5.8rem;
+      color: #ffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font : {
+        size: 4rem;
+        family: "main-font-bold";
+      }
+    }
+    .helperLinks {
+      width: 100%;
+      height: 75%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        width: 100%;
+        height: 3rem;
+        box-sizing: border-box;
+        padding: 0.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        size: 20px;
+        position: relative;
+        z-index: 0;
+        svg {
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+          font : {
+            size: 2.5rem;
+          }
+          color: #fff;
+
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+  }
+  .bottomLinks {
+    width: 100%;
+    height: 20%;
+    .helperLinks {
+      width: 100%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        width: 100%;
+        height: 3rem;
+        box-sizing: border-box;
+        padding: 0.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        size: 20px;
+        position: relative;
+        z-index: 0;
+        svg {
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+          font : {
+            size: 2.5rem;
+          }
+          color: #fff;
+
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}
