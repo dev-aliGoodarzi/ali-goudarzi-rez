@@ -1,0 +1,83 @@
+.settingContainer {
+  position: absolute;
+  z-index: 10;
+  width: max-content;
+  height: max-content;
+  right: 0;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  svg {
+    position: absolute;
+    left: -4.2rem;
+    background-color: #fff;
+    position: 50;
+    border-radius: 50%;
+    top: 1rem;
+    left: calc(15vw - 5rem);
+    transition: 0.5s ease all;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    animation: settingSpinner 2s backwards infinite;
+    font : {
+      size: 4rem;
+    }
+  }
+  .contnets {
+    width: 15vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    visibility: hidden;
+    background-color: #fff;
+    opacity: 0;
+    transition: 1s ease opacity;
+    span {
+      font : {
+        size: 2rem;
+      }
+    }
+    .colorSwitcherContainer {
+      width: 80%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 1rem;
+      margin-top: 2vh;
+      .colorSwitcherItem {
+        width: 28px;
+        height: 28px;
+        margin-left: 1.5rem;
+        border-radius: 50%;
+      }
+    }
+    .RTLCheacker {
+      font : {
+        size: 3rem;
+      }
+    }
+  }
+}
+
+.settingContainer.open {
+  svg {
+    left: -5rem;
+  }
+  .contnets {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes settingSpinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

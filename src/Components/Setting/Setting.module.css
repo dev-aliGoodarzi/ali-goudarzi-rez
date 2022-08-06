@@ -1,0 +1,122 @@
+.settingContainer {
+  position: absolute;
+  z-index: 10;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  right: 0;
+  top: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+}
+
+.settingContainer svg {
+  position: absolute;
+  left: -4.2rem;
+  background-color: #fff;
+  position: 50;
+  border-radius: 50%;
+  top: 1rem;
+  left: calc(15vw - 5rem);
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.5rem;
+  -webkit-animation: settingSpinner 2s backwards infinite;
+          animation: settingSpinner 2s backwards infinite;
+  font-size: 4rem;
+}
+
+.settingContainer .contnets {
+  width: 15vw;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  visibility: hidden;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transition: 1s ease opacity;
+  transition: 1s ease opacity;
+}
+
+.settingContainer .contnets span {
+  font-size: 2rem;
+}
+
+.settingContainer .contnets .colorSwitcherContainer {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 1rem;
+  margin-top: 2vh;
+}
+
+.settingContainer .contnets .colorSwitcherContainer .colorSwitcherItem {
+  width: 28px;
+  height: 28px;
+  margin-left: 1.5rem;
+  border-radius: 50%;
+}
+
+.settingContainer .contnets .RTLCheacker {
+  font-size: 3rem;
+}
+
+.settingContainer.open svg {
+  left: -5rem;
+}
+
+.settingContainer.open .contnets {
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+@-webkit-keyframes settingSpinner {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes settingSpinner {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=Setting.module.css.map */

@@ -1,0 +1,12 @@
+.absoluteSVG {
+  position: absolute;
+  left: -4.2rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  top: 1rem;
+  left: 95vw;
+  -webkit-animation: settingSpinner 2s backwards infinite;
+          animation: settingSpinner 2s backwards infinite;
+  font-size: 4rem;
+}
+/*# sourceMappingURL=App.module.css.map */

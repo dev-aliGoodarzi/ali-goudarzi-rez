@@ -14,10 +14,10 @@ const Home = () => {
           <span>Goudarzi</span>
         </p>
         <div className={styles.job}>
-          <span>I Am A </span>
+          <span style={{ paddingRight: "3rem" }}>I Am A      </span>
           <Typewriter
             options={{
-              strings: ["Web Developer", "Freelancer"],
+              strings: [" Web Developer", "Freelancer"],
               autoStart: true,
               loop: true,
               wrapperClassName: "ss",
