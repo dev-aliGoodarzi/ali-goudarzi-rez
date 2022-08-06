@@ -45,7 +45,7 @@ const Sidebar = ({ themeColor }) => {
           A
         </div>
         <div className={styles.helperLinks} ref={hyperLinksRefTop}>
-          <Link to="/Home">
+          <Link to="/">
             <AiOutlineHome
               onClick={(e) => colorChanger(e, hyperLinksRefTop)}
               style={{ color: themeColor }}
