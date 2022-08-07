@@ -8,6 +8,7 @@ import Sidebar from './Components/Sidebar/Sidebar'
 
 import AboutMe from './Pages/AboutMe/AboutMe'
 import E__404 from './Components/Errors/404__NOT__FOUND/E__404'
+import MySystem from './Pages/MySystem/MySystem'
 const App = () => {
     const [themeColor, setThemeColor] = useState("#ee6192")
     const [fontSize, setFontSize] = useState()
@@ -17,6 +18,7 @@ const App = () => {
         <Routes>
             <Route path="/" element={<Home themeColor={themeColor} fontSize={fontSize} />} />
             <Route path="/about-me" element={<AboutMe themeColor={themeColor} fontSize={fontSize} />} />
+            <Route path='/my-system' element={<MySystem themeColor={themeColor} />} />
             <Route path="*" element={<E__404 themeColor={themeColor} />} />
         </Routes>
 

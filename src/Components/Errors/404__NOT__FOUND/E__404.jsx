@@ -14,16 +14,21 @@ import styles from "./E__404.module.css";
 class E__404 extends Component {
   state = {};
   render() {
-    const { themeColor } = this.props
+    const { themeColor } = this.props;
     return (
-      <div className={styles.notFound} >
-        <p>
-          Requested Resource Not Found
-        </p>
+      <div className={styles.notFound}>
+        <p>Requested Resource Not Found</p>
         <img src={E_404__image} alt="" />
         <div className={styles.itemsContainer}>
-          <button onClick={() => window.history.back()} style={{ background: themeColor }}>GET BACK</button>
-          <Link to="/" style={{ background: themeColor }}>GO TO HOME</Link>
+          <button
+            onClick={() => window.history.back()}
+            style={{ background: themeColor }}
+          >
+            GET BACK
+          </button>
+          <Link to="/" style={{ background: themeColor }}>
+            GO TO HOME
+          </Link>
         </div>
       </div>
     );
