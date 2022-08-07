@@ -1,0 +1,25 @@
+.serviceCard {
+  width: 90%;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  box-shadow: 0 15px 55px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  margin-top: 2vh;
+  transition: 0.1s ease all;
+  &:hover {
+    border: 2px solid;
+    transform: scale(1.01);
+    background: rgba(255, 255, 255, 0.05);
+  }
+  p {
+    text-align: left;
+  }
+  font : {
+    size: 3.5rem !important;
+    family: popins-regular;
+  }
+}

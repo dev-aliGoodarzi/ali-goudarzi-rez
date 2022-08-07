@@ -84,8 +84,28 @@
   border-radius: 50%;
 }
 
-.settingContainer .contnets .RTLCheacker {
-  font-size: 3rem;
+.settingContainer .contnets input {
+  width: 90%;
+  height: 5vh;
+  position: relative;
+  z-index: 444;
+  font-size: 2rem;
+}
+
+.settingContainer .contnets input::-webkit-input-placeholder {
+  font-size: 2rem;
+}
+
+.settingContainer .contnets input:-ms-input-placeholder {
+  font-size: 2rem;
+}
+
+.settingContainer .contnets input::-ms-input-placeholder {
+  font-size: 2rem;
+}
+
+.settingContainer .contnets input::placeholder {
+  font-size: 2rem;
 }
 
 .settingContainer.open svg {

@@ -55,9 +55,18 @@
         border-radius: 50%;
       }
     }
-    .RTLCheacker {
+    input {
+      width: 90%;
+      height: 5vh;
+      position: relative;
+      z-index: 444;
       font : {
-        size: 3rem;
+        size: 2rem;
+      }
+      &::placeholder {
+        font : {
+          size: 2rem;
+        }
       }
     }
   }

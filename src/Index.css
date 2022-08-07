@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: popins-regular;
-  src: url("./Fonts/Poppins-Regular.otf");
+  src: url("./Fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
@@ -41,5 +41,12 @@ body #root {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+}
+
+body span,
+body p,
+body div {
+  -webkit-transition: 0.4s ease color;
+  transition: 0.4s ease color;
 }
 /*# sourceMappingURL=Index.css.map */

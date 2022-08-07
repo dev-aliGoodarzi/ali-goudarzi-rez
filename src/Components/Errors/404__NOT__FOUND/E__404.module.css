@@ -1,0 +1,121 @@
+.notFound {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../../../Images/main-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: "no-repeat";
+}
+
+.notFound p {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: #fff;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  text-align: center;
+  font-size: 3vw;
+  background-color: rgba(0, 0, 0, 0.663);
+}
+
+.notFound img {
+  width: 50%;
+  height: 30%;
+  background: rgba(255, 255, 255, 0.411);
+  border-radius: 2rem;
+  -webkit-animation: sssssf 1s ease 0s infinite alternate linear forwards;
+          animation: sssssf 1s ease 0s infinite alternate linear forwards;
+  --webkit-animation-name: sssssf;
+  --webkit-animation-direction: 1s;
+  --webkit-animation-timing-function: ease-in-out;
+  --webkit-animation-delay: 0;
+  --webkit-animation-iteration-count: infinite;
+  --webkit-animation-fill-mode: forwards;
+  position: relative;
+}
+
+.notFound .itemsContainer {
+  width: 30%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.notFound .itemsContainer a,
+.notFound .itemsContainer button {
+  width: 10vw;
+  border: 2px solid #63f;
+  border-radius: 2vw;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  margin-top: 4rem;
+  color: #ffff;
+  background-color: red;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.notFound .itemsContainer a:hover,
+.notFound .itemsContainer button:hover {
+  border-color: transparent;
+  background-color: #0af;
+}
+
+@-webkit-keyframes sssssf {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 200px;
+  }
+  50% {
+    top: 100px;
+  }
+  75% {
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes sssssf {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 200px;
+  }
+  50% {
+    top: 100px;
+  }
+  75% {
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/*# sourceMappingURL=E__404.module.css.map */
