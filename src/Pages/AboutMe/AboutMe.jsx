@@ -4,26 +4,34 @@ import { me } from "../../Components/ImagesExporter/ImagesExporter";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { MdComputer } from "react-icons/md";
 import { GiAutoRepair } from "react-icons/gi";
+import { FaNodeJs } from "react-icons/fa";
 
 import styles from "./AboutMe.module.css";
 import ServicesCard from "./ServicesCard/ServicesCard";
 const AboutMe = ({ themeColor, fontSize }) => {
   const myServices = [
     {
-      id: "serv-1",
-      name: "Web Development",
+      id: "service-1",
+      name: "FrontEnd Web Development",
       image: <AiOutlineHtml5 />,
-      content: "Modern and mobile-ready website with newest Technology .",
+      content:
+        "Modern and mobile-ready website with newest Technology such as React.js .",
     },
     {
-      id: "serv-2",
+      id: "service-2",
+      name: "Backend Web Development",
+      image: <FaNodeJs />,
+      content: "Currently I have Learning Node.js & Express.Js.",
+    },
+    {
+      id: "service-3",
       name: "build your dream PC",
       image: <MdComputer />,
       content:
         "I can help you to build Your Dream PC & help you to buy best hardware on your money .",
     },
     {
-      id: "serv-3",
+      id: "service-4",
       name: "sysyem repair",
       image: <GiAutoRepair />,
       content:
@@ -35,11 +43,11 @@ const AboutMe = ({ themeColor, fontSize }) => {
       <div className={styles.advantagesContainer}>
         <p className={styles.title}>ABOUT ME</p>
         <p className={styles.aboutMe}>
-          <span style={{ color: themeColor }}>Hello, I’m a Ali</span>, FrontEnd
+          <span style={{ color: themeColor }}>Hello, I’m Ali</span>, FrontEnd
           web-developer based on Iran / Malayer. I have rich experience in web
-          Develeoping & building and customization . Also I am good at{" "}
+          Developing & building and customization . Also I am good at{" "}
           <span style={{ color: themeColor }}>
-            html, css, JavaScript , TypeScript, React-TypeScript .
+            html , css , JavaScript , TypeScript , React-TypeScript .
           </span>{" "}
         </p>
         <div className={styles.myServices}>

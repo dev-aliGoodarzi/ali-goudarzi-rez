@@ -22,6 +22,8 @@
     width: calc(100% - 43rem);
     height: 100%;
     overflow-y: scroll !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
     font : {
       size: 5rem;

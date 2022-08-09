@@ -16,10 +16,14 @@ const Home = ({ themeColor, fontSize }) => {
           </span>
         </p>
         <div className={styles.job}>
-          <span style={{ paddingRight: "3rem" }}>I Am A </span>
+          <span style={{ paddingRight: "3rem" }}>I Am </span>
           <Typewriter
             options={{
-              strings: ["Mid Level FrontEnd Web Developer .", "Freelancer ."],
+              strings: [
+                "Mid Level FrontEnd Web Developer .",
+                "Freelancer .",
+                "Learning Node.Js & Express.Js .",
+              ],
               autoStart: true,
               loop: true,
               wrapperClassName: "ss",

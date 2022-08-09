@@ -1,0 +1,52 @@
+.card {
+  width: 80vw;
+  height: 15vh;
+  background-color: rgba(255, 255, 255, 0.853);
+  border-radius: 1rem;
+  margin-top: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.card img {
+  width: 10%;
+  height: 80%;
+}
+
+.card .contentShower {
+  width: 30vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card .contentShower p {
+  font-size: 3.5rem;
+  font-family: popins-regular;
+  font-weight: bold;
+}
+/*# sourceMappingURL=SystemCard.module.css.map */
