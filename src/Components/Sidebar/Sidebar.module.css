@@ -89,7 +89,7 @@
           justify-content: center;
   size: 20px;
   position: relative;
-  z-index: 0;
+  z-index: 1;
   margin-top: 1rem;
 }
 
@@ -101,7 +101,7 @@
   font-size: 2.5rem;
   color: #fff;
   position: relative;
-  z-index: 2;
+  z-index: 0;
 }
 
 .asideContainer .bottomLinks {

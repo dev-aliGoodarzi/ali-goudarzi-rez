@@ -7,7 +7,6 @@ import styles from "./Sidebar.module.css";
 // CSS
 // **********************************************
 // Modules And Components
-import { Link } from "react-router-dom";
 // Modules And Components
 // **********************************************
 // Images
@@ -26,21 +25,129 @@ import { AiFillGithub } from "react-icons/ai";
 import { BsTelegram } from "react-icons/bs";
 import { BsDiscord } from "react-icons/bs";
 import ReactTooltip from "react-tooltip";
+import LinkCustom from "./LinkCustom/LinkCustom";
 //bottom
 // Images
 // **********************************************
 const Sidebar = ({ themeColor }) => {
-  // ******************for Change SideBar Color******************
-  // ******************for Change SideBar Color******************
+  // ****************** State for Change SideBar Color******************
+  const [topLinksArray, setTopLinksArray] = useState([
+    {
+      id: "l-1",
+      to: "/",
+      dataTip: "Home",
+      icon: <AiOutlineHome color="inherit" />,
+      isBackgroundColored: true,
+    },
+    {
+      id: "l-2",
+      to: "/about-me",
+      dataTip: "AboutMe",
+      icon: <IoPersonOutline color="inherit" />,
+      isBackgroundColored: false,
+    },
+    {
+      id: "l-3",
+      to: "/my-system",
+      dataTip: "my system",
+      icon: <MdComputer color="inherit" />,
+      isBackgroundColored: false,
+    },
+    {
+      id: "l-4",
+      to: "/resume",
+      dataTip: "my resume",
+      icon: <FiSettings color="inherit" />,
+      isBackgroundColored: false,
+    },
+    {
+      id: "l-5",
+      to: "/portfolio",
+      dataTip: "my portfolio",
+      icon: <AiOutlineEye color="inherit" />,
+      isBackgroundColored: false,
+    },
+    {
+      id: "l-6",
+      to: "/blog",
+      dataTip: "blog",
+      icon: <BsNewspaper color="inherit" />,
+      isBackgroundColored: false,
+    },
+    {
+      id: "l-7",
+      to: "/contact-me",
+      dataTip: "contact me",
+      icon: <AiOutlineMail color="inherit" />,
+      isBackgroundColored: false,
+    },
+  ]);
+  const [bottomLinksArray, setBottomLinksArray] = useState([
+    {
+      id: "l-8",
+      to: "/instagram",
+      dataTip: "my Instagram Account",
+      icon: <AiOutlineInstagram color="inherit" />,
+      isBackgroundColored: false,
+    },
+    {
+      id: "l-9",
+      to: "/my-github",
+      dataTip: "my github Account",
+      icon: <AiFillGithub color="inherit" />,
+      isBackgroundColored: false,
+    },
+    {
+      id: "l-10",
+      to: "/my-telegram",
+      dataTip: "my telegram Account",
+      icon: <BsTelegram color="inherit" />,
+      isBackgroundColored: false,
+    },
+    {
+      id: "l-11",
+      to: "/my-discord",
+      dataTip: "my discord Account",
+      icon: <BsDiscord color="inherit" />,
+      isBackgroundColored: false,
+    },
+  ]);
+  // ****************** State for Change SideBar Color******************
   //
   // ***************** for Hide React Tooltip *****************
   const [isTooltipActive, setIsTooltipActive] = useState(false);
   // ***************** for Hide React Tooltip *****************
-  const colorChanger = (btnId) => {
-    const allLinks = document.getElementById("test").children[1].children;
-    [...allLinks].forEach((item) => (item.children[0].style.color = "#fff"));
-    document.getElementById(btnId).children[0].style.color = themeColor;
+  //
+  // ***************** Changing Color Based On state *****************
+  const colorChangerTop = (btnId) => {
+    const topLinksArrayState = [...topLinksArray];
+    const filteredState = topLinksArrayState.map((item) => {
+      return {
+        ...item,
+        isBackgroundColored: false,
+      };
+    });
+    const selectedItemIndex = filteredState.findIndex(
+      (item) => item.id === btnId
+    );
+    filteredState[selectedItemIndex].isBackgroundColored = true;
+    setTopLinksArray(filteredState);
   };
+  const colorChangerBottom = (btnId) => {
+    const bottomLinksArrayState = [...bottomLinksArray];
+    const filteredState = bottomLinksArrayState.map((item) => {
+      return {
+        ...item,
+        isBackgroundColored: false,
+      };
+    });
+    const selectedItemIndex = filteredState.findIndex(
+      (item) => item.id === btnId
+    );
+    filteredState[selectedItemIndex].isBackgroundColored = true;
+    setBottomLinksArray(filteredState);
+  };
+  // ***************** Changing Color Based On state *****************
   return (
     <aside className={styles.asideContainer}>
       {isTooltipActive && <ReactTooltip />}
@@ -49,170 +156,40 @@ const Sidebar = ({ themeColor }) => {
           A
         </div>
         <div className={styles.helperLinks}>
-          <Link
-            to="/"
-            data-tip="Home"
-            id="home"
-            onClick={(e) => {
-              colorChanger(e.currentTarget.id);
-            }}
-          >
-            <AiOutlineHome
+          {topLinksArray.map((item) => (
+            <LinkCustom
+              data={item}
+              key={item.id}
+              themeColor={themeColor}
+              onClick={(e) => {
+                colorChangerTop(e.currentTarget.id);
+              }}
               onMouseEnter={() => setIsTooltipActive(true)}
               onMouseLeave={() => {
                 setIsTooltipActive(false);
                 setTimeout(() => setIsTooltipActive(true), 50);
               }}
-              style={{ color: themeColor }}
-            />
-          </Link>
-          <Link
-            to="/about-me"
-            data-tip="AboutMe"
-            id="AboutMe"
-            onMouseEnter={() => setIsTooltipActive(true)}
-            onMouseLeave={() => {
-              setIsTooltipActive(false);
-              setTimeout(() => setIsTooltipActive(true), 50);
-            }}
-            style={{ color: themeColor }}
-            onClick={(e) => {
-              colorChanger(e.currentTarget.id);
-            }}
-          >
-            <IoPersonOutline />
-          </Link>
-          <Link
-            to="/my-system"
-            id="my-system"
-            data-tip="my system"
-            onMouseEnter={() => setIsTooltipActive(true)}
-            onMouseLeave={() => {
-              setIsTooltipActive(false);
-              setTimeout(() => setIsTooltipActive(true), 50);
-            }}
-            onClick={(e) => {
-              colorChanger(e.currentTarget.id);
-            }}
-          >
-            <MdComputer />
-          </Link>
-          <Link
-            to="/resume"
-            id="my-resume"
-            data-tip="my resume"
-            onMouseEnter={() => setIsTooltipActive(true)}
-            onMouseLeave={() => {
-              setIsTooltipActive(false);
-              setTimeout(() => setIsTooltipActive(true), 50);
-            }}
-            onClick={(e) => {
-              colorChanger(e.currentTarget.id);
-            }}
-          >
-            <FiSettings />
-          </Link>
-          <Link
-            to="/portfolio"
-            id="portfolio"
-            data-tip="my portfolio"
-            onMouseEnter={() => setIsTooltipActive(true)}
-            onMouseLeave={() => {
-              setIsTooltipActive(false);
-              setTimeout(() => setIsTooltipActive(true), 50);
-            }}
-            onClick={(e) => {
-              colorChanger(e.currentTarget.id);
-            }}
-          >
-            <AiOutlineEye />
-          </Link>
-          <Link
-            to="/blog"
-            id="blog"
-            data-tip="blog"
-            onMouseEnter={() => setIsTooltipActive(true)}
-            onMouseLeave={() => {
-              setIsTooltipActive(false);
-              setTimeout(() => setIsTooltipActive(true), 50);
-            }}
-            onClick={(e) => {
-              colorChanger(e.currentTarget.id);
-            }}
-          >
-            <BsNewspaper />
-          </Link>
-          <Link
-            to="/contact-me"
-            data-tip="contact me"
-            id="contact-me"
-            onMouseEnter={() => setIsTooltipActive(true)}
-            onMouseLeave={() => {
-              setIsTooltipActive(false);
-              setTimeout(() => setIsTooltipActive(true), 50);
-            }}
-            onClick={(e) => {
-              colorChanger(e.currentTarget.id);
-            }}
-          >
-            <AiOutlineMail />
-          </Link>
+            ></LinkCustom>
+          ))}
         </div>
       </div>
       <div className={styles.bottomLinks}>
         <div className={styles.helperLinks}>
-          <Link
-            to="/instagram"
-            onMouseEnter={() => setIsTooltipActive(true)}
-            onMouseLeave={() => {
-              setIsTooltipActive(false);
-              setTimeout(() => setIsTooltipActive(true), 50);
-            }}
-            onClick={(e) => {
-              colorChanger(e.currentTarget.id);
-            }}
-          >
-            <AiOutlineInstagram />
-          </Link>
-          <Link
-            to="/my-github"
-            onMouseEnter={() => setIsTooltipActive(true)}
-            onMouseLeave={() => {
-              setIsTooltipActive(false);
-              setTimeout(() => setIsTooltipActive(true), 50);
-            }}
-            onClick={(e) => {
-              colorChanger(e.currentTarget.id);
-            }}
-          >
-            <AiFillGithub />
-          </Link>
-          <Link
-            to="/my-telegram"
-            onMouseEnter={() => setIsTooltipActive(true)}
-            onMouseLeave={() => {
-              setIsTooltipActive(false);
-              setTimeout(() => setIsTooltipActive(true), 50);
-            }}
-            onClick={(e) => {
-              colorChanger(e.currentTarget.id);
-            }}
-          >
-            <BsTelegram />
-          </Link>
-          <Link
-            to="/my-discord"
-            onMouseEnter={() => setIsTooltipActive(true)}
-            onMouseLeave={() => {
-              setIsTooltipActive(false);
-              setTimeout(() => setIsTooltipActive(true), 50);
-            }}
-            onClick={(e) => {
-              colorChanger(e.currentTarget.id);
-            }}
-          >
-            <BsDiscord />
-          </Link>
+          {bottomLinksArray.map((item) => (
+            <LinkCustom
+              data={item}
+              key={item.id}
+              themeColor={themeColor}
+              onClick={(e) => {
+                colorChangerBottom(e.currentTarget.id);
+              }}
+              onMouseEnter={() => setIsTooltipActive(true)}
+              onMouseLeave={() => {
+                setIsTooltipActive(false);
+                setTimeout(() => setIsTooltipActive(true), 50);
+              }}
+            />
+          ))}
         </div>
       </div>
     </aside>

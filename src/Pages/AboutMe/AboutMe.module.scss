@@ -1,15 +1,18 @@
 .aboutMePageCntainer {
-  width: 98%;
+  width: calc(100vw - 4.4rem) !important;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   .imageContainer {
-    width: 45rem;
+    width: 24%;
     height: 100%;
     position: fixed;
     right: 0;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img {
       width: 100%;
       height: 100%;
@@ -19,7 +22,7 @@
     }
   }
   .advantagesContainer {
-    width: calc(100% - 43rem);
+    width: calc(100% + 4.4rem - 24%);
     height: 100%;
     overflow-y: scroll !important;
     -ms-overflow-style: none;
