@@ -17,7 +17,7 @@ const AboutMe = ({ themeColor, fontSize }) => {
     return () => {
       clearTimeout(timeOut);
     };
-  }, []);
+  }, [aboutRef]);
   const myServices = [
     {
       id: "service-1",

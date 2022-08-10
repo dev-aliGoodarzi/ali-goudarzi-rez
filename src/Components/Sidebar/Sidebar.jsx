@@ -55,7 +55,7 @@ const Sidebar = ({ themeColor }) => {
     },
     {
       id: "l-4",
-      to: "/resume",
+      to: "/my-resume",
       dataTip: "my resume",
       icon: <FiSettings color="inherit" />,
       isBackgroundColored: false,
@@ -88,7 +88,7 @@ const Sidebar = ({ themeColor }) => {
       to: "/instagram",
       dataTip: "my Instagram Account",
       icon: <AiOutlineInstagram color="inherit" />,
-      isBackgroundColored: false,
+      isBackgroundColored: true,
     },
     {
       id: "l-9",

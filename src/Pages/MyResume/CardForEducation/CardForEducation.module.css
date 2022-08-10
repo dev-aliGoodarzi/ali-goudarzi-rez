@@ -1,0 +1,36 @@
+.cardContainer {
+  width: 90%;
+  height: 20vh;
+  margin-top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.cardContainer .top .name,
+.cardContainer .top span {
+  font-size: 2.5rem;
+  font-family: popins-regular;
+  font-weight: bold;
+}
+
+.cardContainer .teacherName {
+  font-size: 2rem;
+  color: #fff;
+}
+/*# sourceMappingURL=CardForEducation.module.css.map */

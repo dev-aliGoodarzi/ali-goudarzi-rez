@@ -13,7 +13,7 @@ const Home = ({ themeColor, fontSize }) => {
     return () => {
       clearTimeout(timeOut);
     };
-  }, []);
+  }, [homeRef]);
   return (
     <div className={styles.home} ref={homeRef}>
       <div className={styles.overlay}></div>
