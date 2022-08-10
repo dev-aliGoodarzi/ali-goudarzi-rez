@@ -115,7 +115,7 @@
 .settingContainer.open .contnets {
   left: 0;
   visibility: visible;
-  opacity: 1;
+  opacity: 0.9;
 }
 
 @-webkit-keyframes settingSpinner {

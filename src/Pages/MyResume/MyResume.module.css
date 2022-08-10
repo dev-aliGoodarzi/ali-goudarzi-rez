@@ -10,8 +10,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: 1s ease opacity;
-  transition: 1s ease opacity;
+  -webkit-transition: 0.5s ease opacity;
+  transition: 0.5s ease opacity;
+  opacity: 0;
   scroll-behavior: smooth;
 }
 
@@ -61,7 +62,7 @@
 }
 
 .resumeContainer .left .experienceContainer {
-  width: 80%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,7 +101,7 @@
 }
 
 .resumeContainer .left .educationContainer {
-  width: 80%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,6 +117,7 @@
   padding: 1rem;
   position: relative;
   left: 3%;
+  margin-top: 10vh;
   font-family: popins-regular;
 }
 
@@ -136,5 +138,117 @@
   margin-right: 1rem;
   font-size: 3rem;
   font-weight: bold;
+}
+
+.resumeContainer .left .selfSkills {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  left: 3%;
+  padding: 1rem;
+  margin-top: 10vh;
+  font-family: "popins-regular";
+}
+
+.resumeContainer .left .selfSkills .containerName {
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.resumeContainer .left .selfSkills .containerName span {
+  margin-right: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.resumeContainer .left .selfSkills .skillsProgressContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resumeContainer .left .programmingSkillsContainer {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  left: 3%;
+  padding: 1rem;
+  margin-top: 10vh;
+  font-family: "popins-regular";
+}
+
+.resumeContainer .left .programmingSkillsContainer .containerName {
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.resumeContainer .left .programmingSkillsContainer .containerName span {
+  margin-right: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.resumeContainer .left .programmingSkillsContainer .skillsProgressContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=MyResume.module.css.map */

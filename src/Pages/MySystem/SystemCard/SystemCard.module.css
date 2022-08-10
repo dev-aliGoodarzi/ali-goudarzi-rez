@@ -15,8 +15,8 @@
           justify-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: 1s ease all;
-  transition: 1s ease all;
+  -webkit-transition: 0.2s ease all !important;
+  transition: 0.2s ease all !important;
   padding-left: 3vw;
   padding-right: 3vw;
 }
@@ -24,6 +24,12 @@
 .card img {
   width: 10%;
   height: 80%;
+}
+
+.card:hover {
+  height: 16vh;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .card .contentShower {

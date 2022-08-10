@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  transition: 1s ease all;
+  transition: 0.2s ease all !important;
   padding : {
     left: 3vw;
     right: 3vw;
@@ -16,6 +16,10 @@
   img {
     width: 10%;
     height: 80%;
+  }
+  &:hover {
+    height: 16vh;
+    transform: scale(1.05);
   }
   .contentShower {
     width: 30vw;

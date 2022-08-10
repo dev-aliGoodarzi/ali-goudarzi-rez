@@ -41,7 +41,7 @@ const AboutMe = ({ themeColor, fontSize }) => {
     },
     {
       id: "service-4",
-      name: "sysyem repair",
+      name: "system repair",
       image: <GiAutoRepair />,
       content:
         "Repairing old systems are so mad , I can help you to repair it and make it fresh .",

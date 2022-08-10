@@ -1,15 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
 import styles from "./Card.module.css";
 
-import ReactTooltip from "react-tooltip";
 import { Link } from "react-router-dom";
 
 const Cards = ({
   item: { id, name, companyName, startTime, endTime, website, aboutPosition },
   themeColor,
+  events: { enter, hide },
 }) => {
-  const [isTooltipActived, setIsTooltipActived] = useState(false);
   return (
     <Link
       to={website}
@@ -19,13 +18,9 @@ const Cards = ({
           ? `For Go To   =>  ${website.split("/")[1]} Click `
           : "No Website"
       }`}
-      onMouseEnter={() => setIsTooltipActived(true)}
-      onMouseLeave={() => {
-        setIsTooltipActived(false);
-        setTimeout(() => setIsTooltipActived(true), 50);
-      }}
+      onMouseEnter={enter}
+      onMouseLeave={hide}
     >
-      {isTooltipActived && <ReactTooltip />}
       <div className={styles.top}>
         <p className={styles.name} style={{ color: themeColor }}>
           {name}

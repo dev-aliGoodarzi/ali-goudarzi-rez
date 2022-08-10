@@ -64,7 +64,7 @@ const Setting = ({ setThemeColor, themeColor, setFontSize }) => {
         onClick={() => setIsSettingOpen((beforeState) => !beforeState)}
       />
       <div className={styles.contnets}>
-        <span>COLOR SWITCHER</span>
+        <span>THEME CHANGER</span>
         <div className={styles.colorSwitcherContainer}>
           {colors.map((item) => (
             <div
@@ -75,6 +75,21 @@ const Setting = ({ setThemeColor, themeColor, setFontSize }) => {
             ></div>
           ))}
         </div>
+        <input
+          type="text"
+          placeholder={`${
+            themeColor.length < 3
+              ? "color name || color code 😊"
+              : `Curr color: ${themeColor}`
+          }`}
+          onChange={(e) => {
+            if (e.target.value.length === 0) {
+              return setThemeColor("rgb(238, 97 ,146)");
+            } else {
+              setThemeColor(e.target.value);
+            }
+          }}
+        />
         <input
           type="number"
           placeholder="Font Size (rem) "

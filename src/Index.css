@@ -50,6 +50,8 @@ body #root {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  background-color: #a419ac;
+  background-image: linear-gradient(43deg, #a419ac 0%, #c850c0 45%, #ffcc70 100%);
 }
 
 span,
