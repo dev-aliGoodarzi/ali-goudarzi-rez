@@ -4,6 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 1s ease opacity;
+  opacity: 0;
   .imageContainer {
     width: 24%;
     height: 100%;

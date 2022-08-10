@@ -15,6 +15,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 1s ease opacity;
+  transition: 1s ease opacity;
+  opacity: 0;
 }
 
 .home .overlay {

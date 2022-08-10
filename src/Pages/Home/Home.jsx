@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import styles from "./Home.module.css";
 
 import Typewriter from "typewriter-effect";
 
 const Home = ({ themeColor, fontSize }) => {
+  const homeRef = React.createRef();
+  useEffect(() => {
+    const timeOut = setTimeout(() => {
+      homeRef.current.style.opacity = 1;
+    }, 100);
+    return () => {
+      clearTimeout(timeOut);
+    };
+  }, []);
   return (
-    <div className={styles.home}>
+    <div className={styles.home} ref={homeRef}>
       <div className={styles.overlay}></div>
       <div className={styles.centerContent}>
         <p className={styles.name}>

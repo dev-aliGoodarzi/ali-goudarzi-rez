@@ -10,7 +10,6 @@ import E__404 from "./Components/Errors/404__NOT__FOUND/E__404";
 import MySystem from "./Pages/MySystem/MySystem";
 
 import { Particle } from "./Components/Particle/Particle";
-import { Fade } from "react-reveal";
 
 const App = () => {
   const [themeColor, setThemeColor] = useState("#ee6192");

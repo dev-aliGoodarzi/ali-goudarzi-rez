@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { me } from "../../Components/ImagesExporter/ImagesExporter";
 
 import { AiOutlineHtml5 } from "react-icons/ai";
@@ -9,6 +9,15 @@ import { FaNodeJs } from "react-icons/fa";
 import styles from "./AboutMe.module.css";
 import ServicesCard from "./ServicesCard/ServicesCard";
 const AboutMe = ({ themeColor, fontSize }) => {
+  const aboutRef = React.createRef();
+  useEffect(() => {
+    const timeOut = setTimeout(() => {
+      aboutRef.current.style.opacity = 1;
+    }, 100);
+    return () => {
+      clearTimeout(timeOut);
+    };
+  }, []);
   const myServices = [
     {
       id: "service-1",
@@ -39,7 +48,7 @@ const AboutMe = ({ themeColor, fontSize }) => {
     },
   ];
   return (
-    <div className={styles.aboutMePageCntainer}>
+    <div className={styles.aboutMePageCntainer} ref={aboutRef}>
       <div className={styles.advantagesContainer}>
         <p className={styles.title}>ABOUT ME</p>
         <p className={styles.aboutMe}>
