@@ -65,4 +65,35 @@
 .cardContainer .right svg {
   font-size: 7rem;
 }
+
+@media screen and (max-width: 600px) {
+  .cardContainer {
+    width: 95vw;
+    position: relative;
+    left: 2.5vw;
+    height: 17vh;
+  }
+  .cardContainer .left {
+    width: 60%;
+  }
+  .cardContainer .left .top .name {
+    width: 80vw;
+    font-size: 1.5rem;
+  }
+  .cardContainer .left .top span {
+    font-size: 1.7rem;
+  }
+  .cardContainer .left .teacherName {
+    font-size: 1.6rem;
+  }
+  .cardContainer .left .teacherName span {
+    font-size: 1.5rem;
+  }
+  .cardContainer .right {
+    padding: 0 !important;
+  }
+  .cardContainer .right svg {
+    font-size: 5rem;
+  }
+}
 /*# sourceMappingURL=CardForEducation.module.css.map */

@@ -52,3 +52,49 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .cardContainer {
+    width: 95vw;
+    position: relative;
+    left: 2.5vw;
+    height: 17vh;
+    .left {
+      width: 60%;
+      .top {
+        .name {
+          width: 80vw;
+          font : {
+            size: 1.5rem;
+          }
+        }
+        span {
+          font : {
+            size: 1.7rem;
+          }
+        }
+        span {
+        }
+      }
+      .teacherName {
+        font  : {
+          size: 1.6rem;
+        }
+        span {
+          font : {
+            size: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .right {
+      padding: 0 !important;
+      svg {
+        font : {
+          size: 5rem;
+        }
+      }
+    }
+  }
+}

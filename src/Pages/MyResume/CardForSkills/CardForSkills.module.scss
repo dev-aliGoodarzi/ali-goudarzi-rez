@@ -50,3 +50,28 @@
     border-radius: 2rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .cardForSkills {
+    width: 100vw;
+    p {
+      font : {
+        size: 2rem;
+      }
+      span {
+        font : {
+          size: 2rem;
+        }
+      }
+      margin-bottom: 0.5vh;
+    }
+    progress {
+      height: 15%;
+    }
+  }
+  .cardForSkills:last-of-type {
+    margin : {
+      bottom: 2vh;
+    }
+  }
+}

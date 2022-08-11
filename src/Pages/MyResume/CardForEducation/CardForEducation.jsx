@@ -10,11 +10,17 @@ const CardForEducation = ({
       <div className={styles.left}>
         <div className={styles.top}>
           <p className={styles.name} style={{ color: themeColor }}>
-            <span style={{ color: "#fff" }}>Course Name :</span> {name}
+            <span style={{ color: "#fff" }}>Course Name :</span>
+            {window.innerWidth < 600 && <br />}
+            {name}
           </p>
         </div>
         <p className={styles.teacherName}>
-          Teacher Name : <span style={{ color: themeColor }}>{teacher}</span>
+          Teacher Name :{" "}
+          <span style={{ color: themeColor }}>
+            {window.innerWidth < 600 && <br />}
+            {teacher}
+          </span>
         </p>
       </div>
       <div className={styles.right} style={{ color: themeColor }}>

@@ -45,4 +45,22 @@
   font-size: 3rem;
   font-family: popins-regular;
 }
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 95vw;
+    height: 15vh;
+    position: relative;
+    left: 2.5vw;
+  }
+  .card .top .name {
+    font-size: 1.8rem;
+  }
+  .card .top .timeAndCompany {
+    font-size: 1.3rem;
+  }
+  .card .aboutPosition {
+    font-size: 1.5rem;
+  }
+}
 /*# sourceMappingURL=Card.module.css.map */

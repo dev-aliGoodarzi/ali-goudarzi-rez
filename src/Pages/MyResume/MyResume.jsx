@@ -108,13 +108,13 @@ const MyResume = ({ themeColor, fontSize }) => {
     },
     {
       id: "edu-7",
-      name: "Node.Js",
+      name: "Node.Js ( Learning )",
       teacher: "Erfan Yousefi",
       icon: <FaNodeJs />,
     },
     {
       id: "edu-8",
-      name: "Express.Js",
+      name: "Express.Js ( Learning )",
       teacher: "Erfan Yousefi",
       icon: <SiExpress />,
     },

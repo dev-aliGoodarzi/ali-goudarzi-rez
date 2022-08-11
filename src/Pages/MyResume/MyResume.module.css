@@ -251,4 +251,47 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+@media screen and (max-width: 600px) {
+  .resumeContainer {
+    width: 100vw;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .resumeContainer .imageContainer {
+    position: relative;
+    display: none;
+  }
+  .resumeContainer .left {
+    width: 100vw;
+    height: 100%;
+  }
+  .resumeContainer .left .title {
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    font-size: 2rem;
+  }
+  .resumeContainer .left .experienceContainer,
+  .resumeContainer .left .educationContainer {
+    padding: 0 !important;
+    left: 0 !important;
+    margin-top: 2vh !important;
+  }
+  .resumeContainer .left .experienceContainer .containerName,
+  .resumeContainer .left .educationContainer .containerName {
+    position: relative;
+    left: 2.5vw;
+  }
+  .resumeContainer .left .selfSkills,
+  .resumeContainer .left .programmingSkillsContainer {
+    margin-top: 2vh !important;
+  }
+  .resumeContainer .left .selfSkills .containerName,
+  .resumeContainer .left .programmingSkillsContainer .containerName {
+    font-size: 2rem;
+  }
+}
 /*# sourceMappingURL=MyResume.module.css.map */
