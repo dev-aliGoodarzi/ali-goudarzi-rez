@@ -25,7 +25,7 @@ const Home = ({ themeColor, fontSize }) => {
           </span>
         </p>
         <div className={styles.job}>
-          <span style={{ paddingRight: "3rem" }}>I Am </span>
+          <span style={{ paddingRight: "1rem" }}>I Am </span>
           <Typewriter
             options={{
               strings: [
@@ -38,7 +38,11 @@ const Home = ({ themeColor, fontSize }) => {
               loop: true,
               wrapperClassName: "ss",
               cursorClassName: "cur",
-              styles: { height: "100%", display: "flex", flexDirection: "row" },
+              styles: {
+                height: "100%",
+                display: "flex",
+                flexDirection: "row",
+              },
             }}
           />
         </div>

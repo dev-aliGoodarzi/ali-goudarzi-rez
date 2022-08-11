@@ -39,8 +39,39 @@
     -webkit-animation: progress-animation 2.5s ease-in-out infinite;
   }
 }
-
 @keyframes progress-animation {
+  from {
+    background-position: 0;
+    border-radius: 2rem;
+  }
+  to {
+    background-position: -300%;
+    border-radius: 2rem;
+  }
+}
+@-moz-keyframes progress-animation {
+  from {
+    background-position: 0;
+    border-radius: 2rem;
+  }
+  to {
+    background-position: -300%;
+    border-radius: 2rem;
+  }
+}
+
+@-webkit-keyframes progress-animation {
+  from {
+    background-position: 0;
+    border-radius: 2rem;
+  }
+  to {
+    background-position: -300%;
+    border-radius: 2rem;
+  }
+}
+
+@-o-keyframes progress-animation {
   from {
     background-position: 0;
     border-radius: 2rem;

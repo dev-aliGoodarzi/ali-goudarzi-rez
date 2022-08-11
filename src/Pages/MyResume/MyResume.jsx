@@ -68,6 +68,15 @@ const MyResume = ({ themeColor, fontSize }) => {
       aboutPosition: "Nothing , I was Be a bank Teller In Iran PostBank :)",
       website: "NOWEB",
     },
+    {
+      id: "ex-5",
+      name: "FrontEnd Developer",
+      companyName: "My Self",
+      startTime: "-",
+      endTime: "-",
+      aboutPosition: "I`ll Start It Soon :)",
+      website: "/mini-projects",
+    },
   ];
   const education = [
     {

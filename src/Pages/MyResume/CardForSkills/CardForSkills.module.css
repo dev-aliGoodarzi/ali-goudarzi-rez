@@ -40,7 +40,7 @@
   -webkit-animation: progress-animation 2.5s ease-in-out infinite;
 }
 
-@-webkit-keyframes progress-animation {
+@keyframes progress-animation {
   from {
     background-position: 0;
     border-radius: 2rem;
@@ -51,7 +51,7 @@
   }
 }
 
-@keyframes progress-animation {
+@-webkit-keyframes progress-animation {
   from {
     background-position: 0;
     border-radius: 2rem;

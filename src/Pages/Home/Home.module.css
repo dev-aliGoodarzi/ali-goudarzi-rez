@@ -121,18 +121,42 @@
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem !important;
 }
 
 .home .centerContent .job span:nth-child(1),
 .home .centerContent .job div:nth-child(1) {
-  font-size: 2rem;
+  font-size: 2rem !important;
 }
 
 @media screen and (max-width: 600px) {
   .home {
     width: 100vw !important;
-    height: 100vh;
+    height: 95vh !important;
+  }
+  .home .centerContent {
+    height: 15vh;
+  }
+  .home .centerContent .job .Typewriter {
+    font-size: 2rem !important;
+  }
+  .home .centerContent .job .Typewriter .ss {
+    font-size: 2rem !important;
+  }
+  .home .centerContent .job span,
+  .home .centerContent .job div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    font-size: 1.5rem !important;
+  }
+  .home .centerContent .job span:nth-child(1),
+  .home .centerContent .job div:nth-child(1) {
+    font-size: 1.5rem !important;
   }
 }
 /*# sourceMappingURL=Home.module.css.map */

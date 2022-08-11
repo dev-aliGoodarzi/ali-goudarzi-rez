@@ -84,11 +84,11 @@
         align-items: center;
         color: #fff;
         font : {
-          size: 3rem;
+          size: 2rem !important;
         }
         &:nth-child(1) {
           font : {
-            size: 2rem;
+            size: 2rem !important;
           }
         }
       }
@@ -99,8 +99,35 @@
 @media screen and (max-width: 600px) {
   .home {
     width: 100vw !important ;
-    height: 100vh;
-    .overlay {
+    height: 95vh !important;
+    .centerContent {
+      height: 15vh;
+      .job {
+        .Typewriter {
+          font : {
+            size: 2rem !important;
+          }
+          .ss {
+            font : {
+              size: 2rem !important;
+            }
+          }
+        }
+        span,
+        div {
+          display: flex;
+          align-items: center;
+          color: #fff;
+          font : {
+            size: 1.5rem !important;
+          }
+          &:nth-child(1) {
+            font : {
+              size: 1.5rem !important;
+            }
+          }
+        }
+      }
     }
   }
 } ;

@@ -52,6 +52,36 @@ const App = () => {
           }
         />
         <Route
+          path="paliz-sepidar"
+          element={
+            <CustomRedirection
+              selectedOutsideRoute={"https://paliz-sepidar.ir"}
+            />
+          }
+        />
+        <Route
+          path="siah-sefid"
+          element={
+            <CustomRedirection
+              selectedOutsideRoute={"https://siah-sefid-mag.ir"}
+            />
+          }
+        />
+        <Route
+          path="pizza-pwa"
+          element={
+            <CustomRedirection selectedOutsideRoute={"https://my-pizza.ir"} />
+          }
+        />
+        <Route
+          path="mini-projects"
+          element={
+            <CustomRedirection
+              selectedOutsideRoute={"https://my-template.ir"}
+            />
+          }
+        />
+        <Route
           path="my-github"
           element={
             <CustomRedirection
