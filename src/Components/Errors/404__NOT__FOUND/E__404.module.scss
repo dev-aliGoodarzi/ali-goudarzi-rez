@@ -70,6 +70,40 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .notFound {
+    box-sizing: border-box;
+    padding: 1rem;
+    p {
+      font : {
+        size: 2.3rem;
+        family: popins-regular;
+      }
+      margin-bottom: 3vh;
+    }
+
+    img {
+      width: 100%;
+      height: 15%;
+    }
+    .itemsContainer {
+      width: max-content;
+      a,
+      button {
+        width: 40vw;
+        height: 5rem;
+        font : {
+          size: 2.2rem;
+          family: popins-regular;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
 @keyframes sssssf {
   0% {
     top: 0px;
