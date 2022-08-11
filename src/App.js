@@ -9,7 +9,7 @@ import AboutMe from "./Pages/AboutMe/AboutMe";
 import E__404 from "./Components/Errors/404__NOT__FOUND/E__404";
 import MySystem from "./Pages/MySystem/MySystem";
 
-import { Particle } from "./Components/Particle/Particle";
+// import { Particle } from "./Components/Particle/Particle";
 import MyResume from "./Pages/MyResume/MyResume";
 import CustomRedirection from "./Components/CustomRedirector/CustomRedirector";
 
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <>
-      <Particle />
+      {/* <Particle /> */}
       <Sidebar themeColor={themeColor} />
       <Setting
         setThemeColor={setThemeColor}

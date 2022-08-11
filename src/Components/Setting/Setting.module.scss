@@ -90,3 +90,29 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .settingContainer {
+    width: 15vw;
+    height: 30vh;
+    top: 10%;
+    .contnets {
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: 1s ease opacity;
+      display: none;
+    }
+  }
+  .settingContainer.open {
+    width: 60vw !important;
+    right: 0;
+    left: 40vw;
+    .contnets {
+      visibility: visible;
+      opacity: 1;
+      display: flex;
+    }
+  }
+}

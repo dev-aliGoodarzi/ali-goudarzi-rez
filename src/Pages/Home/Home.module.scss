@@ -95,3 +95,12 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .home {
+    width: 100vw !important ;
+    height: 100vh;
+    .overlay {
+    }
+  }
+} ;

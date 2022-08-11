@@ -98,3 +98,52 @@
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .asideContainer {
+    width: 100vw;
+    height: 5vh;
+    flex-direction: row;
+    .top {
+      height: 100%;
+      flex-direction: row;
+      .logo {
+        width: 15%;
+        height: 100%;
+        .hamburgerMenuContainer {
+          font : {
+            size: 3rem;
+          }
+        }
+        font : {
+          size: 2.5rem;
+        }
+        position: relative;
+      }
+      .helperLinks {
+        position: absolute;
+        width: 100vw;
+        height: 1vh;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s ease all;
+        top: -10vh;
+      }
+      .helperLinks.open {
+        width: 100vw;
+        height: 10vh;
+        flex-direction: row;
+        position: absolute;
+        top: 4.5vh;
+        background-color: #181818;
+        z-index: 40;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .bottomLinks {
+      .helperLinks {
+        flex-direction: row;
+      }
+    }
+  }
+} ;

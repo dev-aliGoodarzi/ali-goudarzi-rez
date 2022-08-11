@@ -26,11 +26,12 @@ import { BsTelegram } from "react-icons/bs";
 import { BsDiscord } from "react-icons/bs";
 import ReactTooltip from "react-tooltip";
 import LinkCustom from "./LinkCustom/LinkCustom";
+import { GiHamburgerMenu } from "react-icons/gi";
 //bottom
 // Images
 // **********************************************
 const Sidebar = ({ themeColor }) => {
-  // ****************** State for Change SideBar Color******************
+  // ****************** State for Change SideBar Color ******************
   const [topLinksArray, setTopLinksArray] = useState([
     {
       id: "l-1",
@@ -112,13 +113,22 @@ const Sidebar = ({ themeColor }) => {
       isBackgroundColored: false,
     },
   ]);
-  // ****************** State for Change SideBar Color******************
+  // ****************** State for Change SideBar Color ******************
+  //
+  // ****************** State for toggleMenu In Mobile ******************
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // ****************** State for toggleMenu In Mobile ******************
   //
   // ***************** for Hide React Tooltip *****************
   const [isTooltipActive, setIsTooltipActive] = useState(false);
   // ***************** for Hide React Tooltip *****************
   //
   // ***************** Changing Color Based On state *****************
+  //
+  // ***************** hamburgerMenuRef *****************
+  const hamburgerMenuRef = React.createRef();
+  // ***************** hamburgerMenuRef *****************
+
   const colorChangerTop = (btnId) => {
     const topLinksArrayState = [...topLinksArray];
     const filteredState = topLinksArrayState.map((item) => {
@@ -153,9 +163,24 @@ const Sidebar = ({ themeColor }) => {
       {isTooltipActive && <ReactTooltip />}
       <div className={styles.top} id="test">
         <div className={styles.logo} style={{ background: themeColor }}>
-          A
+          {window.innerWidth < 600 ? (
+            <div
+              className={styles.hamburgerMenuContainer}
+              ref={hamburgerMenuRef}
+              onClick={() => setIsMenuOpen((prevState) => !prevState)}
+            >
+              <GiHamburgerMenu />
+            </div>
+          ) : (
+            "A"
+          )}
         </div>
-        <div className={styles.helperLinks}>
+        {}
+        <div
+          className={`${styles.helperLinks} ${
+            window.innerWidth < 600 && isMenuOpen && styles.open
+          }`}
+        >
           {topLinksArray.map((item) => (
             <LinkCustom
               data={item}
@@ -163,6 +188,7 @@ const Sidebar = ({ themeColor }) => {
               themeColor={themeColor}
               onClick={(e) => {
                 colorChangerTop(e.currentTarget.id);
+                setIsMenuOpen(false);
               }}
               onMouseEnter={() => setIsTooltipActive(true)}
               onMouseLeave={() => {

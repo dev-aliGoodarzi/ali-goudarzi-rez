@@ -128,4 +128,11 @@
 .home .centerContent .job div:nth-child(1) {
   font-size: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+  .home {
+    width: 100vw !important;
+    height: 100vh;
+  }
+}
 /*# sourceMappingURL=Home.module.css.map */
