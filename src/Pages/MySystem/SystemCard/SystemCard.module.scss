@@ -37,3 +37,22 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 95vw;
+    height: 10vh;
+    img {
+      width: 6rem;
+      height: 6rem;
+    }
+    .contentShower {
+      width: 50vw;
+      p {
+        font : {
+          size: 1.5rem;
+        }
+      }
+    }
+  }
+}

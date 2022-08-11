@@ -55,4 +55,21 @@
   font-family: popins-regular;
   font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 95vw;
+    height: 10vh;
+  }
+  .card img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .card .contentShower {
+    width: 50vw;
+  }
+  .card .contentShower p {
+    font-size: 1.5rem;
+  }
+}
 /*# sourceMappingURL=SystemCard.module.css.map */
