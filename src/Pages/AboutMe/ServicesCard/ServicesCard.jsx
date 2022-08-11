@@ -16,7 +16,9 @@ const ServicesCard = ({
         event.currentTarget.style.borderColor = undefined;
       }}
     >
-      <div style={{ color: themeColor }}>{image}</div>
+      <div className={styles.logoContainer} style={{ color: themeColor }}>
+        {image}
+      </div>
       <p
         style={{
           color: themeColor,

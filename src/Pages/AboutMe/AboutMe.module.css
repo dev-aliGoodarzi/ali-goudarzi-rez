@@ -106,4 +106,46 @@
 .aboutMePageCntainer font {
   size: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+  .aboutMePageCntainer {
+    width: 100vw;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .aboutMePageCntainer .imageContainer {
+    width: 95vw;
+    height: 100vh;
+    position: relative;
+    display: none;
+  }
+  .aboutMePageCntainer .advantagesContainer {
+    width: 100vw;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 2rem;
+  }
+  .aboutMePageCntainer .advantagesContainer .title {
+    padding-top: 1.5rem;
+    padding-bottom: 3.5rem;
+    font-size: 3rem;
+  }
+  .aboutMePageCntainer .advantagesContainer .aboutMe {
+    width: 100%;
+    text-align: left;
+    font-size: 2rem;
+  }
+  .aboutMePageCntainer .advantagesContainer .aboutMe span {
+    font-size: 2rem;
+  }
+  .aboutMePageCntainer .advantagesContainer .myServices {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=AboutMe.module.css.map */

@@ -92,3 +92,46 @@
     size: 2rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .aboutMePageCntainer {
+    width: 100vw;
+    height: max-content;
+    flex-direction: column-reverse;
+    .imageContainer {
+      width: 95vw;
+      height: 100vh;
+      position: relative;
+      display: none;
+    }
+    .advantagesContainer {
+      width: 100vw;
+      height: max-content;
+      padding: 2rem;
+      .title {
+        padding: {
+          top: 1.5rem;
+          bottom: 3.5rem;
+        }
+        font : {
+          size: 3rem;
+        }
+      }
+      .aboutMe {
+        width: 100%;
+        text-align: left;
+        font : {
+          size: 2rem;
+        }
+        span {
+          font : {
+            size: 2rem;
+          }
+        }
+      }
+      .myServices {
+        width: 100%;
+      }
+    }
+  }
+}

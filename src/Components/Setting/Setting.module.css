@@ -145,6 +145,7 @@
     width: 15vw;
     height: 30vh;
     top: 10%;
+    position: fixed;
   }
   .settingContainer .contnets {
     width: 100%;

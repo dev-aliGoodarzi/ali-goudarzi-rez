@@ -35,4 +35,15 @@
 .serviceCard p {
   text-align: left;
 }
+
+@media screen and (max-width: 600px) {
+  .serviceCard {
+    width: 100%;
+    height: 25rem;
+    font-size: 2.4rem !important;
+  }
+  .serviceCard .logoContainer {
+    font-size: 6rem !important;
+  }
+}
 /*# sourceMappingURL=ServicesCard.module.css.map */
