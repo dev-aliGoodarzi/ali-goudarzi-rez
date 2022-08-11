@@ -17,7 +17,7 @@ export const Particle = () => {
         },
         particles: {
           number: {
-            value: 15,
+            value: window.innerWidth < 600 ? 5 : 12,
             density: {
               enable: false,
               value_area: 100,
