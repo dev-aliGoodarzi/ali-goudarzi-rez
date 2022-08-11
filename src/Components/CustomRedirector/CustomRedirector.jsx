@@ -12,7 +12,7 @@ import "./CustomRedirector.css";
 class CustomRedirection extends Component {
   componentDidMount() {
     setTimeout(() => {
-      window.location.href = this.props.selecedOutsideRoute;
+      window.location.href = this.props.selectedOutsideRoute;
     }, 2000);
     if (window.innerWidth < 500) {
       window.scrollTo({ top: 127 });
@@ -43,7 +43,7 @@ class CustomRedirection extends Component {
             </div>
           </div>
         </div>
-        <h2>😊 Be paitiant , about 2sec Time need . Please Wait 😊</h2>
+        <h2>😊 Be patient , about 2sec Time need . Please Wait 😊</h2>
       </div>
     );
   }

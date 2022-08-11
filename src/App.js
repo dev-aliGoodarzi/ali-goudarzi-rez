@@ -47,7 +47,7 @@ const App = () => {
           path="instagram"
           element={
             <CustomRedirection
-              selecedOutsideRoute={"https://instagram.com/cpk1.5"}
+              selectedOutsideRoute={"https://instagram.com/cpk1.5"}
             />
           }
         />
@@ -55,21 +55,21 @@ const App = () => {
           path="my-github"
           element={
             <CustomRedirection
-              selecedOutsideRoute={"https://github.com/M-r-hydra"}
+              selectedOutsideRoute={"https://github.com/M-r-hydra"}
             />
           }
         />
         <Route
           path="my-telegram"
           element={
-            <CustomRedirection selecedOutsideRoute={"t.me/mobogram_server"} />
+            <CustomRedirection selectedOutsideRoute={"t.me/mobogram_server"} />
           }
         />
         <Route
           path="my-discord"
           element={
             <CustomRedirection
-              selecedOutsideRoute={"https://discordapp.com/users/hydra#4547"}
+              selectedOutsideRoute={"https://discordapp.com/users/hydra#4547"}
             />
           }
         />
