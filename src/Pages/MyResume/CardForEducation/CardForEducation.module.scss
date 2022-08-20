@@ -10,6 +10,8 @@
   border-radius: 2rem;
   padding: 2rem;
   background: rgba(255, 255, 255, 0.05);
+  transition: 0.1s ease all;
+
   .left {
     width: 60%;
     height: 100%;
@@ -17,6 +19,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+
     .top {
       .name,
       span {
@@ -25,9 +28,12 @@
           family: popins-regular;
           weight: bold;
         }
+        transition: 0.1s ease all;
       }
     }
     .teacherName {
+      transition: 0.1s ease all;
+
       font : {
         size: 2rem;
         weight: bold;
@@ -37,6 +43,7 @@
           size: 2rem;
           weight: 400;
         }
+        transition: 0.1s ease all;
       }
       color: #fff;
     }

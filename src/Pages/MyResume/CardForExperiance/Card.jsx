@@ -18,8 +18,14 @@ const Cards = ({
           ? `For Go To   =>  ${website.split("/")[1]} Click `
           : "No Website"
       }`}
-      onMouseEnter={enter}
-      onMouseLeave={hide}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.border = `2px solid ${themeColor}`;
+        enter();
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.border = `0`;
+        hide();
+      }}
     >
       <div className={styles.top}>
         <p className={styles.name} style={{ color: themeColor }}>

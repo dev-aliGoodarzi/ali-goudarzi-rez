@@ -150,49 +150,103 @@ const MyResume = ({ themeColor, fontSize }) => {
       value: 70,
     },
   ];
-  const programmingSkills = [
+  const basicSkills = [
     {
-      id: "advantage1",
+      id: "c-code",
+      name: "clean code",
+      value: 90,
+    },
+    {
+      id: "linux",
+      name: "Linux",
+      value: 70,
+    },
+    {
+      id: "git",
+      name: "GIT",
+      value: 50,
+    },
+  ];
+  const frontEndSkills = [
+    {
+      id: "frontEnd1",
       name: "HTML5 & CSS3",
       value: 90,
     },
     {
-      id: "advantage2",
+      id: "frontEnd2",
       name: "SASS & SCSS",
       value: 85,
     },
     {
-      id: "advantage3",
+      id: "frontEnd3",
       name: "JavaScript",
       value: 80,
     },
     {
-      id: "advantage4",
+      id: "frontEnd4",
       name: "React.Js",
       value: 70,
     },
     {
-      id: "advantage5",
+      id: "frontEnd5",
       name: "Tailwind",
       value: 60,
     },
     {
-      id: "advantage6",
+      id: "frontEnd6",
       name: "TypeScript",
       value: 50,
     },
-
+  ];
+  const backEndSkills = [
     {
-      id: "advantage7",
+      id: "backend 1",
       name: "Node.Js (Learning)",
       value: 20,
     },
     {
-      id: "advantage8",
+      id: "backend 2",
       name: "Express.Js (Learning)",
       value: 10,
     },
+    {
+      id: "backend 3",
+      name: "SQL (Learning)",
+      value: 5,
+    },
+    {
+      id: "backend 4",
+      name: "MongoDB (Learning)",
+      value: 5,
+    },
+    {
+      id: "backend 5",
+      name: "Graph QL (Learning)",
+      value: 5,
+    },
+    {
+      id: "backend 6",
+      name: "Redis (Learning)",
+      value: 5,
+    },
+    {
+      id: "backend 7",
+      name: "Elastic Search (Learning)",
+      value: 5,
+    },
+    {
+      id: "backend 8",
+      name: "Socket Writing (Learning)",
+      value: 5,
+    },
+    {
+      id: "backend 9",
+      name: "Rabbit MQ (Learning)",
+      value: 5,
+    },
   ];
+
   const showReactToolTip = () => {
     setIsTooltipActived(true);
   };
@@ -252,10 +306,42 @@ const MyResume = ({ themeColor, fontSize }) => {
         </div>
         <div className={styles.programmingSkillsContainer}>
           <p className={styles.containerName}>
-            <span style={{ color: themeColor }}>My Programming</span> Skills
+            <span style={{ color: themeColor }}>Basic </span> Skills
           </p>
           <div className={styles.skillsProgressContainer}>
-            {programmingSkills.map((item) => {
+            {basicSkills.map((item) => {
+              return (
+                <CardForSkills
+                  key={item.id}
+                  item={item}
+                  themeColor={themeColor}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className={styles.programmingSkillsContainer}>
+          <p className={styles.containerName}>
+            <span style={{ color: themeColor }}>Front-End</span> Skills
+          </p>
+          <div className={styles.skillsProgressContainer}>
+            {frontEndSkills.map((item) => {
+              return (
+                <CardForSkills
+                  key={item.id}
+                  item={item}
+                  themeColor={themeColor}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className={styles.programmingSkillsContainer}>
+          <p className={styles.containerName}>
+            <span style={{ color: themeColor }}>Back-End</span> Skills
+          </p>
+          <div className={styles.skillsProgressContainer}>
+            {backEndSkills.map((item) => {
               return (
                 <CardForSkills
                   key={item.id}

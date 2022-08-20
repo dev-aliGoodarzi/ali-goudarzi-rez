@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./Pages/Home/Home";
@@ -9,17 +9,17 @@ import AboutMe from "./Pages/AboutMe/AboutMe";
 import E__404 from "./Components/Errors/404__NOT__FOUND/E__404";
 import MySystem from "./Pages/MySystem/MySystem";
 
-// import { Particle } from "./Components/Particle/Particle";
+import { Particle } from "./Components/Particle/Particle";
 import MyResume from "./Pages/MyResume/MyResume";
 import CustomRedirection from "./Components/CustomRedirector/CustomRedirector";
 
 const App = () => {
   const [themeColor, setThemeColor] = useState("#ee6192");
   const [fontSize, setFontSize] = useState();
-
+  const memoParticles = useMemo(() => <Particle />, []);
   return (
     <>
-      {/* <Particle /> */}
+      {memoParticles}
       <Sidebar themeColor={themeColor} />
       <Setting
         setThemeColor={setThemeColor}
