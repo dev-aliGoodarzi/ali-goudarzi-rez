@@ -13,7 +13,6 @@ import styles from "./Sidebar.module.css";
 //top
 import { AiOutlineHome } from "react-icons/ai";
 import { IoPersonOutline } from "react-icons/io5";
-import { MdComputer } from "react-icons/md";
 import { FiSettings } from "react-icons/fi";
 import { AiOutlineEye } from "react-icons/ai";
 import { BsNewspaper } from "react-icons/bs";
@@ -47,13 +46,7 @@ const Sidebar = ({ themeColor }) => {
       icon: <IoPersonOutline color="inherit" />,
       isBackgroundColored: false,
     },
-    {
-      id: "l-3",
-      to: "/my-system",
-      dataTip: "my system",
-      icon: <MdComputer color="inherit" />,
-      isBackgroundColored: false,
-    },
+
     {
       id: "l-4",
       to: "/my-resume",

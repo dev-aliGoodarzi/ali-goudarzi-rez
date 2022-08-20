@@ -52,7 +52,7 @@ const MyResume = ({ themeColor, fontSize }) => {
     {
       id: "ex-3",
       name: "FrontEnd Web Developer",
-      companyName: "My self (pizza)",
+      companyName: "My self ( my-pizza.ir )",
       startTime: "2021/dec",
       endTime: "2021/dec",
       website: "/pizza-pwa",
@@ -71,7 +71,7 @@ const MyResume = ({ themeColor, fontSize }) => {
     {
       id: "ex-5",
       name: "FrontEnd Developer",
-      companyName: "My Self",
+      companyName: "My Self ( my-template.ir )",
       startTime: "-",
       endTime: "-",
       aboutPosition: "I`ll Start It Soon :)",
