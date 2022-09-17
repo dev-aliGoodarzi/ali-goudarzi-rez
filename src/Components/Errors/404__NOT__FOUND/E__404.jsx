@@ -11,7 +11,7 @@ import styles from "./E__404.module.css";
 //Modules
 //Modules
 
-class E__404 extends Component {
+class Error404 extends Component {
   state = {};
   render() {
     const { themeColor } = this.props;
@@ -35,4 +35,4 @@ class E__404 extends Component {
   }
 }
 
-export default E__404;
+export default Error404;

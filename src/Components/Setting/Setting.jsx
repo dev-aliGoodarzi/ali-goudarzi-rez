@@ -7,8 +7,11 @@ import { FiSettings } from "react-icons/fi";
 // CSS
 import styles from "./Setting.module.css";
 // CSS
-
-const Setting = ({ setThemeColor, themeColor, setFontSize }) => {
+// Buttons For Music
+import { BsPause, BsPlay } from "react-icons/bs";
+import { BsStop } from "react-icons/bs";
+// Buttons For Music
+const Setting = ({ setThemeColor, themeColor, setFontSize, music }) => {
   const [isSettingOpen, setIsSettingOpen] = useState(false);
   const colors = [
     {
@@ -49,6 +52,7 @@ const Setting = ({ setThemeColor, themeColor, setFontSize }) => {
       className={`${styles.settingContainer} ${isSettingOpen && styles.open}`}
     >
       <FiSettings
+        className={styles.settingIcon}
         onMouseEnter={(event) => {
           event.currentTarget.style.backgroundColor = themeColor;
           event.currentTarget.style.fontSize = "4.2rem";
@@ -64,7 +68,7 @@ const Setting = ({ setThemeColor, themeColor, setFontSize }) => {
         onClick={() => setIsSettingOpen((beforeState) => !beforeState)}
       />
       <div className={styles.contnets}>
-        <span>THEME CHANGER</span>
+        <span>THEME CONTROLLER</span>
         <div className={styles.colorSwitcherContainer}>
           {colors.map((item) => (
             <div
@@ -95,6 +99,17 @@ const Setting = ({ setThemeColor, themeColor, setFontSize }) => {
           placeholder="Font Size (rem) "
           onChange={(e) => setFontSize(e.target.value)}
         />
+        <div className={styles.musicControls}>
+          <BsStop
+            color={themeColor}
+            onClick={() => {
+              music.pause();
+              music.currentTime = 0;
+            }}
+          />
+          <BsPause color={themeColor} onClick={() => music.pause()} />
+          <BsPlay color={themeColor} onClick={() => music.play()} />
+        </div>
       </div>
     </div>
   );

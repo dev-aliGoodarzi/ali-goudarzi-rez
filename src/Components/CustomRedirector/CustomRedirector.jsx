@@ -43,7 +43,15 @@ class CustomRedirection extends Component {
             </div>
           </div>
         </div>
-        <h2>😊 Be patient , about 2sec Time need . Please Wait 😊</h2>
+        <h2>
+          <span role="img" aria-label="smile">
+            😊
+          </span>
+          Be patient , about 2sec Time need . Please Wait{" "}
+          <span role="img" aria-label="smile">
+            😊
+          </span>
+        </h2>
       </div>
     );
   }

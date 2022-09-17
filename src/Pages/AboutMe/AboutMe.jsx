@@ -30,7 +30,7 @@ const AboutMe = ({ themeColor, fontSize }) => {
       id: "service-2",
       name: "Backend Web Development",
       image: <FaNodeJs />,
-      content: "Currently I have Learning Node.js & Express.Js.",
+      content: "Currently I'm Learning Node.js & Express.Js .",
     },
     {
       id: "service-3",

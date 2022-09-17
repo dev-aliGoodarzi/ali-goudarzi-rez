@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./Pages/Home/Home";
@@ -6,24 +6,36 @@ import Setting from "./Components/Setting/Setting";
 import Sidebar from "./Components/Sidebar/Sidebar";
 
 import AboutMe from "./Pages/AboutMe/AboutMe";
-import E__404 from "./Components/Errors/404__NOT__FOUND/E__404";
+import Error404 from "./Components/Errors/404__NOT__FOUND/E__404";
 
-import { Particle } from "./Components/Particle/Particle";
 import MyResume from "./Pages/MyResume/MyResume";
 import CustomRedirection from "./Components/CustomRedirector/CustomRedirector";
 
+import musicFile from "./music/music.mp3";
+// import { Particle } from "./Components/Particle/Particle";
 const App = () => {
   const [themeColor, setThemeColor] = useState("#ee6192");
   const [fontSize, setFontSize] = useState();
-  const memoParticles = useMemo(() => <Particle />, []);
+  const music = new Audio(musicFile);
+
+  useEffect(() => {
+    music.play();
+    music.addEventListener("ended", () => {
+      music.play();
+    });
+  }, []);
+
+  // const memoParticles = useMemo(() => <Particle />, []);
+
   return (
     <>
-      {memoParticles}
+      {/* {memoParticles} */}
       <Sidebar themeColor={themeColor} />
       <Setting
         setThemeColor={setThemeColor}
         themeColor={themeColor}
         setFontSize={setFontSize}
+        music={music}
       />
       <Routes>
         <Route
@@ -98,7 +110,7 @@ const App = () => {
             />
           }
         />
-        <Route path="*" element={<E__404 themeColor={themeColor} />} />
+        <Route path="*" element={<Error404 themeColor={themeColor} />} />
       </Routes>
     </>
   );

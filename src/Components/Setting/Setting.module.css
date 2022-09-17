@@ -22,9 +22,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1rem;
+  border-radius: 1rem;
 }
 
-.settingContainer svg {
+.settingContainer .settingIcon {
   position: absolute;
   left: -4.2rem;
   background-color: #fff;
@@ -57,10 +58,12 @@
           align-items: center;
   position: relative;
   visibility: hidden;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   opacity: 0;
   -webkit-transition: 1s ease opacity;
   transition: 1s ease opacity;
+  border-radius: 1rem;
+  padding-top: 2rem;
 }
 
 .settingContainer .contnets span {
@@ -89,23 +92,59 @@
   height: 5vh;
   position: relative;
   z-index: 444;
-  font-size: 2rem;
+  -webkit-box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.7rem;
 }
 
 .settingContainer .contnets input::-webkit-input-placeholder {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .settingContainer .contnets input:-ms-input-placeholder {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .settingContainer .contnets input::-ms-input-placeholder {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .settingContainer .contnets input::placeholder {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.settingContainer .contnets .musicControls {
+  width: 50%;
+  height: -webkit-max-content !important;
+  height: -moz-max-content !important;
+  height: max-content !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  bottom: 5%;
+  -webkit-transition: 0.1s ease all;
+  transition: 0.1s ease all;
+}
+
+.settingContainer .contnets .musicControls svg {
+  -webkit-transition: 0.1s ease all;
+  transition: 0.1s ease all;
+  background-color: rgba(194, 194, 194, 0.4);
+  border-radius: 1rem;
+  font-size: 2.6rem;
 }
 
 .settingContainer.open svg {
@@ -143,18 +182,32 @@
 @media screen and (max-width: 600px) {
   .settingContainer {
     width: 15vw;
-    height: 30vh;
+    height: 50vh !important;
     top: 10%;
     position: fixed;
   }
+  .settingContainer .settingIcon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+  .settingContainer .settingIcon svg {
+    font-size: 1rem;
+  }
   .settingContainer .contnets {
     width: 100%;
-    height: 100%;
+    height: 50vh !important;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: 1s ease opacity;
     transition: 1s ease opacity;
     display: none;
+  }
+  .settingContainer .contnets span {
+    font-size: 1.5rem;
+  }
+  .settingContainer .contnets .colorSwitcherContainer {
+    width: 100%;
   }
   .settingContainer.open {
     width: 60vw !important;

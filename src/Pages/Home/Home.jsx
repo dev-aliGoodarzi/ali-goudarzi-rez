@@ -31,8 +31,8 @@ const Home = ({ themeColor, fontSize }) => {
               strings: [
                 "Mid Level FrontEnd Web Developer .",
                 "Freelancer .",
-                "Learning Node.Js & Express.Js .",
-                "Trying To be MERN Stack Developer .",
+                "Learning right now Node.Js & Express.Js .",
+                "Trying To be MERN Stack Web Developer .",
               ],
               autoStart: true,
               loop: true,

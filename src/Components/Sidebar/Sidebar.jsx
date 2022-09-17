@@ -27,6 +27,7 @@ import ReactTooltip from "react-tooltip";
 import LinkCustom from "./LinkCustom/LinkCustom";
 import { GiHamburgerMenu } from "react-icons/gi";
 //bottom
+
 // Images
 // **********************************************
 const Sidebar = ({ themeColor }) => {
@@ -170,9 +171,9 @@ const Sidebar = ({ themeColor }) => {
         </div>
         {}
         <div
-          className={`${styles.helperLinks} ${
-            window.innerWidth < 600 && isMenuOpen && styles.open
-          }`}
+          className={`${styles.helperLinks} ${window.innerWidth < 600 &&
+            isMenuOpen &&
+            styles.open}`}
         >
           {topLinksArray.map((item) => (
             <LinkCustom
