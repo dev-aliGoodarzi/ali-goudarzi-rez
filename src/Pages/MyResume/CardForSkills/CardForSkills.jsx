@@ -10,13 +10,14 @@ const CardForSkills = ({ item: { name, value }, themeColor }) => {
       <p style={{ color: themeColor }}>
         <span>{name}</span> : {value}%
       </p>
-      <progress
-        value={value}
-        max={100}
+      <div
+        className={styles.likeProgress}
         style={{
           background: "#1d1e21e1",
         }}
-      />
+      >
+        <div style={{ width: `${value}%` }} className={styles.inner}></div>
+      </div>
     </div>
   );
 };
