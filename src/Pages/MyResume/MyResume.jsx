@@ -12,6 +12,7 @@ import { SiTypescript } from "react-icons/si";
 import { IoLogoReact } from "react-icons/io5";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
+import { AiOutlineArrowDown } from "react-icons/ai";
 // Images
 // CSS
 import styles from "./MyResume.module.css";
@@ -131,21 +132,26 @@ const MyResume = ({ themeColor, fontSize }) => {
     {
       id: "frontEnd3",
       name: "JavaScript",
-      value: 80,
+      value: 85,
     },
     {
       id: "frontEnd4",
       name: "React.Js",
-      value: 70,
+      value: 80,
     },
     {
       id: "frontEnd5",
-      name: "Tailwind",
-      value: 60,
+      name: "React Hooks",
+      value: 70,
     },
     {
       id: "frontEnd6",
       name: "TypeScript",
+      value: 60,
+    },
+    {
+      id: "frontEnd7",
+      name: "Tailwind",
       value: 50,
     },
   ];
@@ -214,6 +220,35 @@ const MyResume = ({ themeColor, fontSize }) => {
               />
             );
           })}
+        </div>
+        <div className={styles.doneProjects}>
+          <p className={styles.containerName}>
+            <span style={{ color: themeColor }}>My</span> Done Projects
+          </p>
+          <p className={styles.helperContent}>
+            <div>
+              You can see It In this format : project
+              <span style={{ color: themeColor }}>XXX</span>.a-goodarzi.ir
+            </div>
+            <br />
+            <div>
+              {" "}
+              simple <AiOutlineArrowDown />
+            </div>
+            <br />
+            <div>
+              <span style={{ color: themeColor }}>project1</span> .
+              a-goodarzi.ir
+            </div>
+            <br />
+            <div>
+              Number Must be In Range
+              <span style={{ color: themeColor, marginLeft: "1rem" }}>
+                {" "}
+                1 - 100{" "}
+              </span>
+            </div>
+          </p>
         </div>
         <div className={styles.selfSkills}>
           <p className={styles.containerName}>

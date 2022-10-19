@@ -5,22 +5,18 @@
   font-family: main-font-regular;
   src: url("./Fonts/CormorantGaramond-Regular.ttf");
 }
-
 @font-face {
   font-family: main-font-bold;
   src: url("./Fonts/CormorantGaramond-Bold.ttf");
 }
-
 @font-face {
   font-family: popins-regular;
   src: url("./Fonts/Poppins-Regular.ttf");
 }
-
 @font-face {
   font-family: popins-bold;
   src: url("./Fonts/Poppins-Bold.otf");
 }
-
 html {
   scroll-behavior: smooth !important;
 }
@@ -41,17 +37,10 @@ html:focus-within {
 body a {
   text-decoration: none;
 }
-
 body #root {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   background: linear-gradient(335deg, #a419ac, #c850c0, #ffcc70);
   background-size: 600% 600%;
@@ -62,7 +51,6 @@ body #root {
 span,
 p,
 div {
-  -webkit-transition: 0.4s ease color;
   transition: 0.4s ease color;
 }
 
@@ -77,7 +65,6 @@ div {
     background-position: 0% 25%;
   }
 }
-
 @keyframes AnimationName {
   0% {
     background-position: 0% 25%;
@@ -89,26 +76,15 @@ div {
     background-position: 0% 25%;
   }
 }
-
 @media screen and (max-width: 600px) {
   #root {
     width: 100vw;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
-}
-/*# sourceMappingURL=Index.css.map */
+}/*# sourceMappingURL=Index.css.map */
