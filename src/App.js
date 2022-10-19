@@ -7,7 +7,7 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 
 import AboutMe from "./Pages/AboutMe/AboutMe";
 import Error404 from "./Components/Errors/404__NOT__FOUND/E__404";
-
+import MyProjects from "./Pages/MyProjects/MyProjects";
 import MyResume from "./Pages/MyResume/MyResume";
 import CustomRedirection from "./Components/CustomRedirector/CustomRedirector";
 
@@ -26,6 +26,69 @@ const App = () => {
   }, []);
 
   // const memoParticles = useMemo(() => <Particle />, []);
+  const dataForProtFolio = [
+    {
+      pathForRedirect: "/simpleProject1",
+      pathInReal: "https://project1.a-goodarzi.ir",
+    },
+    {
+      pathForRedirect: "/simple Project2",
+      pathInReal: "https://project2.a-goodarzi.ir",
+    },
+    {
+      pathForRedirect: "/simple Project3",
+      pathInReal: "https://project3.a-goodarzi.ir",
+    },
+    {
+      pathForRedirect: "/simpleProject4",
+      pathInReal: "https://project4.a-goodarzi.ir",
+    },
+    {
+      pathForRedirect: "/simpleProject5",
+      pathInReal: "https://project5.a-goodarzi.ir",
+    },
+    {
+      pathForRedirect: "/simpleProject6",
+      pathInReal: "https://project6.a-goodarzi.ir",
+    },
+    {
+      pathForRedirect: "/simpleProject7",
+      pathInReal: "https://project7.a-goodarzi.ir",
+    },
+    {
+      pathForRedirect: "/simpleProject8",
+      pathInReal: "https://project8.a-goodarzi.ir",
+    },
+    {
+      pathForRedirect: "/simpleProject9",
+      pathInReal: "https://project9.a-goodarzi.ir",
+    },
+    {
+      pathForRedirect: "/simpleProject10",
+      pathInReal: "https://project10.a-goodarzi.ir",
+    },
+
+    {
+      pathForRedirect: "/shop1",
+      pathInReal: "https://shop1.a-goodarzi.ir",
+    },
+    {
+      pathForRedirect: "/shop2",
+      pathInReal: "https://shop2.a-goodarzi.ir",
+    },
+    {
+      pathForRedirect: "/contact-creator",
+      pathInReal: "https://contact-creator.a-goodarzi.ir",
+    },
+    {
+      pathForRedirect: "/siah-sefid-mag",
+      pathInReal: "https://siah-sefid-mag.ir",
+    },
+    {
+      pathForRedirect: "/my-pizza",
+      pathInReal: "https://my-pizza.ir",
+    },
+  ];
 
   return (
     <>
@@ -51,40 +114,14 @@ const App = () => {
           element={<MyResume themeColor={themeColor} fontSize={fontSize} />}
         />
         <Route
+          path="/portfolio"
+          element={<MyProjects themeColor={themeColor} fontSize={fontSize} />}
+        />
+        <Route
           path="instagram"
           element={
             <CustomRedirection
               selectedOutsideRoute={"https://instagram.com/cpk1.5"}
-            />
-          }
-        />
-        <Route
-          path="paliz-sepidar"
-          element={
-            <CustomRedirection
-              selectedOutsideRoute={"https://paliz-sepidar.ir"}
-            />
-          }
-        />
-        <Route
-          path="siah-sefid"
-          element={
-            <CustomRedirection
-              selectedOutsideRoute={"https://siah-sefid-mag.ir"}
-            />
-          }
-        />
-        <Route
-          path="pizza-pwa"
-          element={
-            <CustomRedirection selectedOutsideRoute={"https://my-pizza.ir"} />
-          }
-        />
-        <Route
-          path="mini-projects"
-          element={
-            <CustomRedirection
-              selectedOutsideRoute={"https://my-template.ir"}
             />
           }
         />
@@ -110,6 +147,15 @@ const App = () => {
             />
           }
         />
+        {dataForProtFolio.map((item) => (
+          <Route
+            key={item.pathForRedirect}
+            path={item.pathForRedirect}
+            element={
+              <CustomRedirection selectedOutsideRoute={item.pathInReal} />
+            }
+          />
+        ))}
         <Route path="*" element={<Error404 themeColor={themeColor} />} />
       </Routes>
     </>

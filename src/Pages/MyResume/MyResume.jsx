@@ -1,10 +1,8 @@
 // React
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 // React
 // Components & Modules
-import ReactTooltip from "react-tooltip";
 import CardForEducation from "./CardForEducation/CardForEducation";
-import Card from "./CardForExperiance/Card";
 // Components & Modules
 // Images
 import { me } from "../../Components/ImagesExporter/ImagesExporter";
@@ -14,7 +12,6 @@ import { SiTypescript } from "react-icons/si";
 import { IoLogoReact } from "react-icons/io5";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
-import { AiOutlineArrowDown } from "react-icons/ai";
 // Images
 // CSS
 import styles from "./MyResume.module.css";
@@ -30,55 +27,7 @@ const MyResume = ({ themeColor, fontSize }) => {
       clearTimeout(timeOut);
     };
   }, [resumeContainerRef]);
-  const [isTooltipActived, setIsTooltipActived] = useState(false);
-  const experience = [
-    {
-      id: "ex-1",
-      name: "FrontEnd Web Developer",
-      companyName: "Paliz - Sepidar",
-      startTime: "2022/dec",
-      endTime: "2022/dec",
-      website: "/paliz-sepidar",
-      aboutPosition: "After Got the Base UI-UX , I Convert it to Code :) ",
-    },
-    {
-      id: "ex-2",
-      name: "FrontEnd Web Developer",
-      companyName: "Azad IAU",
-      startTime: "2022/may",
-      endTime: "present",
-      website: "/siah-sefid",
-      aboutPosition: "For Score In lessons I wrote this WebPage :)",
-    },
-    {
-      id: "ex-3",
-      name: "FrontEnd Web Developer",
-      companyName: "My self ( my-pizza.ir )",
-      startTime: "2021/dec",
-      endTime: "2021/dec",
-      website: "/pizza-pwa",
-      aboutPosition:
-        "When I Started Learn React.Js I Tried To build This Project :)",
-    },
-    {
-      id: "ex-4",
-      name: "Bank Teller",
-      companyName: "Iran PostBank",
-      startTime: "2020/dec",
-      endTime: "2021/jul",
-      aboutPosition: "Nothing , I was Be a bank Teller In Iran PostBank :)",
-      website: "NOWEB",
-    },
-    {
-      id: "ex-5",
-      name: "FrontEnd Developer",
-      companyName: "My Self ( my-template.ir )",
-      startTime: "-",
-      endTime: "-",
-      aboutPosition: "I`ll Start It Soon :)",
-      website: "/mini-projects",
-    },
-  ];
+
   const education = [
     {
       id: "edu-1",
@@ -248,33 +197,10 @@ const MyResume = ({ themeColor, fontSize }) => {
     },
   ];
 
-  const showReactToolTip = () => {
-    setIsTooltipActived(true);
-  };
-  const hideReactToolTip = () => {
-    setIsTooltipActived(false);
-    setTimeout(() => setIsTooltipActived(true), 10);
-  };
   return (
     <div className={styles.resumeContainer} ref={resumeContainerRef}>
-      {isTooltipActived && <ReactTooltip />}
       <div className={styles.left}>
         <p className={styles.title}>RESUME</p>
-        <div className={styles.experienceContainer}>
-          <p className={styles.containerName}>
-            <span style={{ color: themeColor }}>My</span> Experience
-          </p>{" "}
-          {experience.map((item) => {
-            return (
-              <Card
-                key={item.id}
-                item={item}
-                themeColor={themeColor}
-                events={{ enter: showReactToolTip, hide: hideReactToolTip }}
-              />
-            );
-          })}
-        </div>
         <div className={styles.educationContainer}>
           <p className={styles.containerName}>
             <span style={{ color: themeColor }}>My</span> Education
@@ -288,35 +214,6 @@ const MyResume = ({ themeColor, fontSize }) => {
               />
             );
           })}
-        </div>
-        <div className={styles.doneProjects}>
-          <p className={styles.containerName}>
-            <span style={{ color: themeColor }}>My</span> Done Projects
-          </p>
-          <p className={styles.helperContent}>
-            <div>
-              You can see It In this format : project
-              <span style={{ color: themeColor }}>XXX</span>.a-goodarzi.ir
-            </div>
-            <br />
-            <div>
-              {" "}
-              simple <AiOutlineArrowDown />
-            </div>
-            <br />
-            <div>
-              <span style={{ color: themeColor }}>project1</span> .
-              a-goodarzi.ir
-            </div>
-            <br />
-            <div>
-              Number Must be In Range
-              <span style={{ color: themeColor, marginLeft: "1rem" }}>
-                {" "}
-                1 - 100{" "}
-              </span>
-            </div>
-          </p>
         </div>
         <div className={styles.selfSkills}>
           <p className={styles.containerName}>

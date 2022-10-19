@@ -1,0 +1,21 @@
+.projectCard {
+  width: 80%;
+  height: 10vh;
+  display: flex;
+  margin-top: 5px;
+  box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.2);
+  color: #fff;
+  position: relative;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: {
+    top: 2rem;
+  }
+  font : {
+    size: 4rem;
+    family: popins-regular;
+  }
+}

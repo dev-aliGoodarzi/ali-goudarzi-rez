@@ -26,14 +26,16 @@
   font-size: 2.3rem;
 }
 
-.cardForSkills progress {
+.cardForSkills .likeProgress {
   width: 100%;
   height: 30%;
   display: block;
   border-radius: 2rem;
 }
 
-.cardForSkills progress::-moz-progress-bar {
+.cardForSkills .likeProgress .inner {
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffd33dc7), color-stop(17%, #ea4aaac7), color-stop(34%, #b34bffc7), color-stop(51%, #01feffc7), color-stop(68%, #ffd33dc7));
   background: linear-gradient(90deg, #ffd33dc7, #ea4aaac7 17%, #b34bffc7 34%, #01feffc7 51%, #ffd33dc7 68%);
   background-size: 300% 100%;
   animation: progress-animation 2.5s ease-in-out infinite alternate forwards;
@@ -73,7 +75,7 @@
   .cardForSkills p span {
     font-size: 2rem;
   }
-  .cardForSkills progress {
+  .cardForSkills .likeProgress {
     height: 15%;
   }
   .cardForSkills:last-of-type {

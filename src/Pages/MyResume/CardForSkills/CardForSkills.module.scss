@@ -18,25 +18,25 @@
     }
     margin-bottom: 0.5vh;
   }
-  progress {
+  .likeProgress {
     width: 100%;
     height: 30%;
     display: block;
     border-radius: 2rem;
-  }
-
-  progress::-moz-progress-bar {
-    background: linear-gradient(
-      90deg,
-      #ffd33dc7,
-      #ea4aaac7 17%,
-      #b34bffc7 34%,
-      #01feffc7 51%,
-      #ffd33dc7 68%
-    );
-    background-size: 300% 100%;
-    animation: progress-animation 2.5s ease-in-out infinite alternate forwards;
-    -webkit-animation: progress-animation 2.5s ease-in-out infinite;
+    .inner {
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        #ffd33dc7,
+        #ea4aaac7 17%,
+        #b34bffc7 34%,
+        #01feffc7 51%,
+        #ffd33dc7 68%
+      );
+      background-size: 300% 100%;
+      animation: progress-animation 2.5s ease-in-out infinite alternate forwards;
+      -webkit-animation: progress-animation 2.5s ease-in-out infinite;
+    }
   }
 }
 @keyframes progress-animation {
@@ -96,7 +96,7 @@
       }
       margin-bottom: 0.5vh;
     }
-    progress {
+    .likeProgress {
       height: 15%;
     }
   }

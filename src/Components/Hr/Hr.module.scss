@@ -1,0 +1,13 @@
+.hrEl {
+  width: 100%;
+  height: max-content;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  color: #ffff;
+  font : {
+    size: 4rem;
+  }
+  .inner {
+    width: 100%;
+  }
+}
