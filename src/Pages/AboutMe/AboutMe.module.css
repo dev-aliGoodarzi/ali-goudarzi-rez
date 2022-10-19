@@ -1,37 +1,22 @@
 .aboutMePageCntainer {
   width: calc(100vw - 4.4rem) !important;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: 1s ease opacity;
+  align-items: center;
+  justify-content: space-between;
   transition: 1s ease opacity;
   opacity: 0;
 }
-
 .aboutMePageCntainer .imageContainer {
   width: 24%;
   height: 100%;
   position: fixed;
   right: 0;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .aboutMePageCntainer .imageContainer img {
   width: 100%;
   height: 100%;
@@ -39,7 +24,6 @@
   top: 0;
   left: 0;
 }
-
 .aboutMePageCntainer .advantagesContainer {
   width: calc(100% + 4.4rem - 24%);
   height: 100%;
@@ -48,21 +32,12 @@
   scrollbar-width: none;
   background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
   font-size: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
   padding: 3rem;
 }
-
 .aboutMePageCntainer .advantagesContainer .title {
   width: 100%;
   color: rgba(204, 204, 204, 0.116);
@@ -71,7 +46,6 @@
   font-family: "popins-bold";
   letter-spacing: 1ch;
 }
-
 .aboutMePageCntainer .advantagesContainer .aboutMe {
   width: 90%;
   text-align: justify;
@@ -79,30 +53,24 @@
   color: #ccc;
   font-size: 3rem;
 }
-
 .aboutMePageCntainer .advantagesContainer .aboutMe span {
   font-family: popins-bold;
   font-size: 3rem;
 }
-
 .aboutMePageCntainer .advantagesContainer .myServices {
   width: 90%;
   margin-top: 3vh;
 }
-
 .aboutMePageCntainer .advantagesContainer .myServices div {
   font-size: 8rem;
 }
-
 .aboutMePageCntainer .advantagesContainer .myServices p.myServicesLOGO {
   font-size: 4rem;
   font-family: popins-regular;
 }
-
 .aboutMePageCntainer .advantagesContainer .myServices p.myServicesLOGO span {
   font-size: 4rem;
 }
-
 .aboutMePageCntainer font {
   size: 2rem;
 }
@@ -111,10 +79,7 @@
   .aboutMePageCntainer {
     width: 100vw;
     height: 95vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .aboutMePageCntainer .imageContainer {
     width: 95vw;
@@ -145,5 +110,4 @@
   .aboutMePageCntainer .advantagesContainer .myServices {
     width: 100%;
   }
-}
-/*# sourceMappingURL=AboutMe.module.css.map */
+}/*# sourceMappingURL=AboutMe.module.css.map */

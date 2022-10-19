@@ -12,6 +12,7 @@ import MyResume from "./Pages/MyResume/MyResume";
 import CustomRedirection from "./Components/CustomRedirector/CustomRedirector";
 
 import musicFile from "./music/music.mp3";
+import ContactMe from "./Pages/ContactMe/ContactMe";
 // import { Particle } from "./Components/Particle/Particle";
 const App = () => {
   const [themeColor, setThemeColor] = useState("#ee6192");
@@ -118,7 +119,7 @@ const App = () => {
           element={<MyProjects themeColor={themeColor} fontSize={fontSize} />}
         />
         <Route
-          path="instagram"
+          path="/instagram"
           element={
             <CustomRedirection
               selectedOutsideRoute={"https://instagram.com/cpk1.5"}
@@ -126,7 +127,7 @@ const App = () => {
           }
         />
         <Route
-          path="my-github"
+          path="/my-github"
           element={
             <CustomRedirection
               selectedOutsideRoute={"https://github.com/M-r-hydra"}
@@ -134,18 +135,22 @@ const App = () => {
           }
         />
         <Route
-          path="my-telegram"
+          path="/my-telegram"
           element={
             <CustomRedirection selectedOutsideRoute={"t.me/mobogram_server"} />
           }
         />
         <Route
-          path="my-discord"
+          path="/my-discord"
           element={
             <CustomRedirection
               selectedOutsideRoute={"https://discordapp.com/users/hydra#4547"}
             />
           }
+        />
+        <Route
+          path="/contact-me"
+          element={<ContactMe themeColor={themeColor} />}
         />
         {dataForProtFolio.map((item) => (
           <Route

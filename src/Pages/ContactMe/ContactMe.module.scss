@@ -1,0 +1,33 @@
+.contactMeContainer {
+  width: calc(100vw - 4.4rem) !important;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 1s ease opacity;
+  opacity: 0;
+  background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
+  .imageContainer {
+    width: 24%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imageContainer {
+    display: none;
+  }
+}
