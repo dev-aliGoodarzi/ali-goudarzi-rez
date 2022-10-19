@@ -46,4 +46,16 @@
   top: 0;
   left: 0;
 }
+
+@media screen and (max-width: 600px) {
+  .projectsContainer {
+    width: 100vw !important;
+  }
+  .projectsContainer .projects {
+    width: 100%;
+  }
+  .projectsContainer .imageContainer {
+    display: none;
+  }
+}
 /*# sourceMappingURL=MyProjects.module.css.map */

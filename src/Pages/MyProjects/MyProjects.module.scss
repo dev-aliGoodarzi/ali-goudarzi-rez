@@ -30,3 +30,15 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .projectsContainer {
+    width: 100vw !important;
+    .projects {
+      width: 100%;
+    }
+    .imageContainer {
+      display: none;
+    }
+  }
+}

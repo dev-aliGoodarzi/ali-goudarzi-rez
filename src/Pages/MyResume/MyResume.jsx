@@ -225,7 +225,7 @@ const MyResume = ({ themeColor, fontSize }) => {
           <p className={styles.containerName}>
             <span style={{ color: themeColor }}>My</span> Done Projects
           </p>
-          <p className={styles.helperContent}>
+          <div className={styles.helperContent}>
             <div>
               You can see It In this format : project
               <span style={{ color: themeColor }}>XXX</span>.a-goodarzi.ir
@@ -248,7 +248,7 @@ const MyResume = ({ themeColor, fontSize }) => {
                 1 - 100{" "}
               </span>
             </div>
-          </p>
+          </div>
         </div>
         <div className={styles.selfSkills}>
           <p className={styles.containerName}>

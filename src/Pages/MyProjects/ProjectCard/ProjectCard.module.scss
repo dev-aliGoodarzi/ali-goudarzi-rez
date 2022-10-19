@@ -19,3 +19,13 @@
     family: popins-regular;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .projectCard {
+    width: 95%;
+    left: 2.5%;
+    font : {
+      size: 2.6rem;
+    }
+  }
+}
