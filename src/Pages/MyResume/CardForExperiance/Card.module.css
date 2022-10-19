@@ -2,28 +2,46 @@
   width: 100%;
   height: 25vh;
   margin-top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 2rem;
   padding: 2rem;
   background: rgba(255, 255, 255, 0.05);
+  -webkit-transition: 0.1s ease all;
   transition: 0.1s ease all;
 }
+
 .card .top .name {
   font-size: 2.5rem;
   font-family: popins-regular;
   font-weight: bold;
 }
+
 .card .top .timeAndCompany {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #777;
   font-size: 2rem;
   font-family: popins-regular;
 }
+
 .card .aboutPosition {
   color: #e9e9e9;
   font-size: 3rem;
@@ -46,4 +64,5 @@
   .card .aboutPosition {
     font-size: 1.5rem;
   }
-}/*# sourceMappingURL=Card.module.css.map */
+}
+/*# sourceMappingURL=Card.module.css.map */
