@@ -157,7 +157,7 @@ const Sidebar = ({ themeColor }) => {
       {isTooltipActive && <ReactTooltip />}
       <div className={styles.top} id="test">
         <div className={styles.logo} style={{ background: themeColor }}>
-          {window.innerWidth < 600 ? (
+          {window.innerWidth < 901 ? (
             <div
               className={styles.hamburgerMenuContainer}
               ref={hamburgerMenuRef}
@@ -171,9 +171,9 @@ const Sidebar = ({ themeColor }) => {
         </div>
         {}
         <div
-          className={`${styles.helperLinks} ${window.innerWidth < 600 &&
-            isMenuOpen &&
-            styles.open}`}
+          className={`${styles.helperLinks} ${
+            window.innerWidth < 901 && isMenuOpen && styles.open
+          }`}
         >
           {topLinksArray.map((item) => (
             <LinkCustom
