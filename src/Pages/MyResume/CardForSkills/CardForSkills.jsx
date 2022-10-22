@@ -16,7 +16,7 @@ const CardForSkills = ({ item: { name, value }, themeColor }) => {
           <span>{value}%</span>
         </div>
         <p className={`${styles.levelContainer}`} style={{ color: themeColor }}>
-          {between(value, 0, 25) && "Started :)"}
+          {between(value, 0, 25) && ""}
           {between(value, 26, 50) && "Intermediate"}
           {between(value, 51, 70) && "Advanced"}
           {between(value, 71, 100) && "Professional"}
