@@ -48,7 +48,7 @@
   font-family: popins-regular;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .card {
     width: 95vw;
     height: 15vh;
