@@ -1,23 +1,38 @@
 .resumeContainer {
   width: calc(100vw - 4.4rem) !important;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.5s ease opacity;
   transition: 0.5s ease opacity;
   opacity: 0;
   scroll-behavior: smooth;
 }
+
 .resumeContainer .imageContainer {
   width: 24%;
   height: 100%;
   position: fixed;
   right: 0;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .resumeContainer .imageContainer img {
   width: 100%;
   height: 100%;
@@ -25,8 +40,9 @@
   top: 0;
   left: 0;
 }
+
 .resumeContainer .left {
-  width: 76%;
+  width: calc(100% - 24%);
   height: 100%;
   scroll-behavior: smooth;
   overflow-y: scroll;
@@ -35,6 +51,7 @@
   background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
   font-size: 5rem;
 }
+
 .resumeContainer .left .title {
   width: 100%;
   color: rgba(204, 204, 204, 0.116);
@@ -43,61 +60,100 @@
   font-family: "popins-bold";
   letter-spacing: 1ch;
 }
+
 .resumeContainer .left .experienceContainer {
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 1rem;
   position: relative;
   left: 3%;
   font-family: popins-regular;
 }
+
 .resumeContainer .left .experienceContainer .containerName {
   height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffff;
   font-size: 3rem;
   font-weight: bold;
 }
+
 .resumeContainer .left .experienceContainer .containerName span {
   margin-right: 1rem;
   font-size: 3rem;
   font-weight: bold;
 }
+
 .resumeContainer .left .educationContainer {
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 1rem;
   position: relative;
   left: 3%;
-  margin-top: 10vh;
   font-family: popins-regular;
 }
+
 .resumeContainer .left .educationContainer .containerName {
   height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffff;
   font-size: 3rem;
   font-weight: bold;
 }
+
 .resumeContainer .left .educationContainer .containerName span {
   margin-right: 1rem;
   font-size: 3rem;
   font-weight: bold;
 }
+
 .resumeContainer .left .doneProjects {
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   left: 3%;
   padding: 1rem;
@@ -105,115 +161,191 @@
   font-family: "popins-regular";
   font-family: popins-regular;
 }
+
 .resumeContainer .left .doneProjects .containerName {
   height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffff;
   font-size: 3rem;
   font-weight: bold;
 }
+
 .resumeContainer .left .doneProjects .containerName span {
   margin-right: 1rem;
   font-size: 3rem;
   font-weight: bold;
 }
+
 .resumeContainer .left .doneProjects .helperContent {
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   font-size: 2rem;
   color: #fff;
 }
+
 .resumeContainer .left .doneProjects .helperContent span {
   font-size: 2.2rem;
   font-weight: bold;
 }
+
 .resumeContainer .left .doneProjects .helperContent div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 2rem;
 }
+
 .resumeContainer .left .doneProjects .helperContent div span {
   font-size: 2.2rem;
   font-weight: bold;
 }
+
 .resumeContainer .left .selfSkills {
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   left: 3%;
   padding: 1rem;
   margin-top: 10vh;
   font-family: "popins-regular";
 }
+
 .resumeContainer .left .selfSkills .containerName {
   height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffff;
   font-size: 3rem;
   font-weight: bold;
 }
+
 .resumeContainer .left .selfSkills .containerName span {
   margin-right: 1rem;
   font-size: 3rem;
   font-weight: bold;
 }
+
 .resumeContainer .left .selfSkills .skillsProgressContainer {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .resumeContainer .left .programmingSkillsContainer {
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   left: 3%;
   padding: 1rem;
   margin-top: 10vh;
   font-family: "popins-regular";
 }
+
 .resumeContainer .left .programmingSkillsContainer .containerName {
   height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffff;
   font-size: 3rem;
   font-weight: bold;
 }
+
 .resumeContainer .left .programmingSkillsContainer .containerName span {
   margin-right: 1rem;
   font-size: 3rem;
   font-weight: bold;
 }
+
 .resumeContainer .left .programmingSkillsContainer .skillsProgressContainer {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (max-width: 600px) {
   .resumeContainer {
     width: 100vw;
     height: 95vh;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .resumeContainer .imageContainer {
     position: relative;
@@ -229,22 +361,23 @@
     font-size: 2rem;
   }
   .resumeContainer .left .experienceContainer,
-.resumeContainer .left .educationContainer {
+  .resumeContainer .left .educationContainer {
     padding: 0 !important;
     left: 0 !important;
     margin-top: 2vh !important;
   }
   .resumeContainer .left .experienceContainer .containerName,
-.resumeContainer .left .educationContainer .containerName {
+  .resumeContainer .left .educationContainer .containerName {
     position: relative;
     left: 2.5vw;
   }
   .resumeContainer .left .selfSkills,
-.resumeContainer .left .programmingSkillsContainer {
+  .resumeContainer .left .programmingSkillsContainer {
     margin-top: 2vh !important;
   }
   .resumeContainer .left .selfSkills .containerName,
-.resumeContainer .left .programmingSkillsContainer .containerName {
+  .resumeContainer .left .programmingSkillsContainer .containerName {
     font-size: 2rem;
   }
-}/*# sourceMappingURL=MyResume.module.css.map */
+}
+/*# sourceMappingURL=MyResume.module.css.map */

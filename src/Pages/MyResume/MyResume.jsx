@@ -12,7 +12,6 @@ import { SiTypescript } from "react-icons/si";
 import { IoLogoReact } from "react-icons/io5";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
-import { AiOutlineArrowDown } from "react-icons/ai";
 // Images
 // CSS
 import styles from "./MyResume.module.css";
@@ -221,35 +220,7 @@ const MyResume = ({ themeColor, fontSize }) => {
             );
           })}
         </div>
-        <div className={styles.doneProjects}>
-          <p className={styles.containerName}>
-            <span style={{ color: themeColor }}>My</span> Done Projects
-          </p>
-          <div className={styles.helperContent}>
-            <div>
-              You can see It In this format : project
-              <span style={{ color: themeColor }}>XXX</span>.a-goodarzi.ir
-            </div>
-            <br />
-            <div>
-              {" "}
-              simple <AiOutlineArrowDown />
-            </div>
-            <br />
-            <div>
-              <span style={{ color: themeColor }}>project1</span> .
-              a-goodarzi.ir
-            </div>
-            <br />
-            <div>
-              Number Must be In Range
-              <span style={{ color: themeColor, marginLeft: "1rem" }}>
-                {" "}
-                1 - 100{" "}
-              </span>
-            </div>
-          </div>
-        </div>
+
         <div className={styles.selfSkills}>
           <p className={styles.containerName}>
             <span style={{ color: themeColor }}>My Self</span> Skills

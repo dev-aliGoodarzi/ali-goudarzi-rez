@@ -9,13 +9,22 @@
   height: max-content;
   right: 0;
   top: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 1rem;
   border-radius: 1rem;
 }
+
 .settingContainer .settingIcon {
   position: absolute;
   left: -4.2rem;
@@ -24,79 +33,114 @@
   border-radius: 50%;
   top: 1rem;
   left: calc(15vw - 5rem);
+  -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0.5rem;
   -webkit-animation: settingSpinner 2s backwards infinite;
           animation: settingSpinner 2s backwards infinite;
   font-size: 4rem;
 }
+
 .settingContainer .contnets {
   width: 15vw;
   height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   visibility: hidden;
   background-color: rgba(255, 255, 255, 0.9);
   opacity: 0;
+  -webkit-transition: 1s ease opacity;
   transition: 1s ease opacity;
   border-radius: 1rem;
   padding-top: 2rem;
 }
+
 .settingContainer .contnets span {
   font-size: 2rem;
 }
+
 .settingContainer .contnets .colorSwitcherContainer {
   width: 80%;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 1rem;
   margin-top: 2vh;
 }
+
 .settingContainer .contnets .colorSwitcherContainer .colorSwitcherItem {
   width: 28px;
   height: 28px;
   margin-left: 1.5rem;
   border-radius: 50%;
 }
+
 .settingContainer .contnets input {
   width: 90%;
   height: 5vh;
   position: relative;
   z-index: 444;
-  box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
   margin-top: 2rem;
   padding: 1rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 1.7rem;
 }
-.settingContainer .contnets input::-moz-placeholder {
+
+.settingContainer .contnets input::-webkit-input-placeholder {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .settingContainer .contnets input:-ms-input-placeholder {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+.settingContainer .contnets input::-ms-input-placeholder {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .settingContainer .contnets input::placeholder {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .settingContainer .contnets .musicControls {
   width: 50%;
   height: -webkit-max-content !important;
   height: -moz-max-content !important;
   height: max-content !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   bottom: 5%;
+  -webkit-transition: 0.1s ease all;
   transition: 0.1s ease all;
 }
+
 .settingContainer .contnets .musicControls svg {
+  -webkit-transition: 0.1s ease all;
   transition: 0.1s ease all;
   background-color: rgba(194, 194, 194, 0.4);
   border-radius: 1rem;
@@ -106,6 +150,7 @@
 .settingContainer.open svg {
   left: -5rem;
 }
+
 .settingContainer.open .contnets {
   left: 0;
   visibility: visible;
@@ -114,21 +159,26 @@
 
 @-webkit-keyframes settingSpinner {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes settingSpinner {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
+
 @media screen and (max-width: 600px) {
   .settingContainer {
     width: 15vw;
@@ -149,6 +199,7 @@
     height: 50vh !important;
     visibility: hidden;
     opacity: 0;
+    -webkit-transition: 1s ease opacity;
     transition: 1s ease opacity;
     display: none;
   }
@@ -166,6 +217,9 @@
   .settingContainer.open .contnets {
     visibility: visible;
     opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-}/*# sourceMappingURL=Setting.module.css.map */
+}
+/*# sourceMappingURL=Setting.module.css.map */

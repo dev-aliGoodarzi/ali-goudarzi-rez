@@ -90,7 +90,6 @@ const App = () => {
       pathInReal: "https://my-pizza.ir",
     },
   ];
-
   return (
     <>
       {/* {memoParticles} */}

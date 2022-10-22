@@ -5,9 +5,11 @@
   height: max-content;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  color: white;
+  color: #ffff;
   font-size: 4rem;
 }
+
 .hrEl .inner {
   width: 100%;
-}/*# sourceMappingURL=Hr.module.css.map */
+}
+/*# sourceMappingURL=Hr.module.css.map */
