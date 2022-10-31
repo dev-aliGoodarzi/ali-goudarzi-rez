@@ -81,7 +81,7 @@ const MyResume = ({ themeColor, fontSize }) => {
   const selfSkills = [
     {
       id: "self-1",
-      name: "Language (Per) Native",
+      name: "Lang (Per) Native",
       value: 100,
     },
     {
@@ -96,7 +96,7 @@ const MyResume = ({ themeColor, fontSize }) => {
     },
     {
       id: "self-4",
-      name: "Language (Eng)",
+      name: "Lang (Eng)",
       value: 70,
     },
   ];
