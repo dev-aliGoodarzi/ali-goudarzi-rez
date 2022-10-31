@@ -19,7 +19,7 @@ const CardForSkills = ({ item: { name, value }, themeColor }) => {
           {between(value, 0, 25) && ""}
           {between(value, 26, 50) && "Intermediate"}
           {between(value, 51, 70) && "Advanced"}
-          {between(value, 71, 100) && "Professional"}
+          {between(value, 71, 100) && "Pro"}
         </p>
       </div>
       <div
