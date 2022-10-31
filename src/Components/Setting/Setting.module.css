@@ -14,13 +14,13 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -36,10 +36,10 @@
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0.5rem;
   -webkit-animation: settingSpinner 2s backwards infinite;
-  animation: settingSpinner 2s backwards infinite;
+          animation: settingSpinner 2s backwards infinite;
   font-size: 4rem;
 }
 
@@ -51,11 +51,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   visibility: hidden;
   background-color: rgba(255, 255, 255, 0.9);
@@ -75,7 +75,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 1rem;
   margin-top: 2vh;
 }
@@ -93,12 +93,12 @@
   position: relative;
   z-index: 444;
   -webkit-box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
   margin-top: 2rem;
   padding: 1rem;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 1.7rem;
 }
 
@@ -132,8 +132,8 @@
   display: flex;
   position: absolute;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   bottom: 5%;
   -webkit-transition: 0.1s ease all;
   transition: 0.1s ease all;
@@ -160,22 +160,22 @@
 @-webkit-keyframes settingSpinner {
   from {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes settingSpinner {
   from {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 

@@ -6,17 +6,17 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 20px;
   -webkit-box-shadow: 0 15px 55px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 15px 55px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 15px 55px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   margin-top: 2vh;
   -webkit-transition: 0.1s ease all;
@@ -28,7 +28,7 @@
 .serviceCard:hover {
   border: 2px solid;
   -webkit-transform: scale(1.01);
-  transform: scale(1.01);
+          transform: scale(1.01);
   background: rgba(255, 255, 255, 0.05);
 }
 
