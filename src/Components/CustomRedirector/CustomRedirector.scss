@@ -390,3 +390,10 @@ $color2: #d93a54;
     transform: rotate(-40deg);
   }
 }
+
+@media screen and (min-width: 1px) and (max-width: 900px) {
+  .custom-redirector {
+    width: 100vw !important;
+    height: 94.6vh !important;
+  }
+}

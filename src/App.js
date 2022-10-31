@@ -132,6 +132,16 @@ const App = () => {
               selectedOutsideRoute={"https://github.com/M-r-hydra"}
             />
           }
+        />{" "}
+        <Route
+          path="/my-linkedin"
+          element={
+            <CustomRedirection
+              selectedOutsideRoute={
+                "https://www.linkedin.com/in/ali-goudarzi-79a07a238/"
+              }
+            />
+          }
         />
         <Route
           path="/my-telegram"

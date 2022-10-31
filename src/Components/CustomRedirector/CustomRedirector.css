@@ -515,4 +515,11 @@
             transform: rotate(-40deg);
   }
 }
+
+@media screen and (min-width: 1px) and (max-width: 900px) {
+  .custom-redirector {
+    width: 100vw !important;
+    height: 94.6vh !important;
+  }
+}
 /*# sourceMappingURL=CustomRedirector.css.map */

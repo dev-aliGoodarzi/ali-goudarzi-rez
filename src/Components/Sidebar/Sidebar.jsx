@@ -11,7 +11,7 @@ import styles from "./Sidebar.module.css";
 // **********************************************
 // Images
 //top
-import { AiOutlineHome } from "react-icons/ai";
+import { AiFillLinkedin, AiOutlineHome } from "react-icons/ai";
 import { IoPersonOutline } from "react-icons/io5";
 import { FiSettings } from "react-icons/fi";
 import { AiOutlineEye } from "react-icons/ai";
@@ -83,24 +83,31 @@ const Sidebar = ({ themeColor }) => {
       to: "/instagram",
       dataTip: "my Instagram Account",
       icon: <AiOutlineInstagram color="inherit" />,
-      isBackgroundColored: true,
+      isBackgroundColored: false,
     },
     {
       id: "l-9",
+      to: "/my-linkedin",
+      dataTip: "my LinkedIn Account",
+      icon: <AiFillLinkedin color="inherit" />,
+      isBackgroundColored: false,
+    },
+    {
+      id: "l-10",
       to: "/my-github",
       dataTip: "my github Account",
       icon: <AiFillGithub color="inherit" />,
       isBackgroundColored: false,
     },
     {
-      id: "l-10",
+      id: "l-11",
       to: "/my-telegram",
       dataTip: "my telegram Account",
       icon: <BsTelegram color="inherit" />,
       isBackgroundColored: false,
     },
     {
-      id: "l-11",
+      id: "l-12",
       to: "/my-discord",
       dataTip: "my discord Account",
       icon: <BsDiscord color="inherit" />,

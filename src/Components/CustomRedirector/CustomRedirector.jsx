@@ -22,7 +22,7 @@ class CustomRedirection extends Component {
   }
   render() {
     return (
-      <div className="custom-redirector">
+      <div className="custom-redirector w-full">
         <h1>Redirecting </h1>
         <div class="sea">
           <div class="circle-wrapper">

@@ -158,7 +158,7 @@ const MyResume = ({ themeColor, fontSize }) => {
     {
       id: "backend 1",
       name: "Node.Js (Learning)",
-      value: 20,
+      value: 25,
     },
     {
       id: "backend 2",
