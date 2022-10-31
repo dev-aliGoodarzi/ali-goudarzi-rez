@@ -42,7 +42,12 @@
 }
 
 @media screen and (max-width: 900px) {
-  .imageContainer {
+  .contactMeContainer {
+    width: 100vw !important;
+    right: 0 !important;
+    left: 0 !important;
+  }
+  .contactMeContainer .imageContainer {
     display: none;
   }
 }

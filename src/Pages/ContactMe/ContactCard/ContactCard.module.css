@@ -43,4 +43,12 @@
 .contactCardItem svg {
   font-size: 7rem;
 }
+
+@media screen and (min-width: 1px) and (max-width: 900px) {
+  .contactCardItem {
+    width: 95vw !important;
+    right: 0 !important;
+    left: 2.5vw !important;
+  }
+}
 /*# sourceMappingURL=ContactCard.module.css.map */
