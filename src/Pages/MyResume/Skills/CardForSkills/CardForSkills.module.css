@@ -1,6 +1,6 @@
 .cardForSkills {
   width: 40%;
-  height: 10vh;
+  height: 13vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,29 +31,24 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 2.3rem;
+  font-size: 1rem;
   margin-bottom: 0.5vh;
 }
 
 .cardForSkills .aboutCurr .nameContainer,
 .cardForSkills .aboutCurr .levelContainer {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
 }
 
 .cardForSkills .aboutCurr .nameContainer span,
 .cardForSkills .aboutCurr .levelContainer span {
   color: #fff;
-  font-size: 2.3rem;
-}
-
-.cardForSkills .aboutCurr span {
-  color: #fff;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
 }
 
 .cardForSkills .likeProgress {
   width: 100%;
-  height: 30%;
+  height: 1.5rem;
   display: block;
   border-radius: 2rem;
 }
