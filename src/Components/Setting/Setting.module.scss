@@ -119,12 +119,14 @@
 @media screen and (max-width: 900px) {
   .settingContainer {
     width: 15vw;
-    height: 50vh !important;
+    height: 40vh !important;
     top: 10%;
     position: fixed;
+    left: 20vw;
     .settingIcon {
       width: 3rem;
       height: 3rem;
+      left: 67vw;
       font : {
         size: 1rem;
       }
