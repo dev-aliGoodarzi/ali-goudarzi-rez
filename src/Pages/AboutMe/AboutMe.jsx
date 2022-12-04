@@ -58,6 +58,13 @@ const AboutMe = ({ themeColor, fontSize }) => {
           <span style={{ color: themeColor }}>
             html , css , JavaScript , TypeScript , React-TypeScript .
           </span>{" "}
+          <br />
+          <span>
+            Im Trying To be{" ---- "}
+            <span style={{ color: themeColor }}>Fullstack{"<MERN>"}</span>
+            {" ---- "}
+            Developer{"  "} {" :) "}
+          </span>
         </p>
         <div className={styles.myServices}>
           <p className={styles.myServicesLOGO}>

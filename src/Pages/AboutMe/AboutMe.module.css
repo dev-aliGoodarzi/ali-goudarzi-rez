@@ -77,14 +77,14 @@
   position: relative;
   right: 5%;
   text-align: justify;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-family: popins-regular;
   color: #ccc;
 }
 
 .aboutMePageCntainer .advantagesContainer .aboutMe span {
   font-family: popins-bold;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .aboutMePageCntainer .advantagesContainer .myServices {
