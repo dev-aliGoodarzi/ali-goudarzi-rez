@@ -48,6 +48,14 @@ const MyProjects = ({ themeColor }) => {
   ];
   const myAdvanceProjects = [
     {
+      nameForShow: "Chocolate shop",
+      pathForRedirect: "/ch-land",
+    },
+    {
+      nameForShow: "CV Creator",
+      pathForRedirect: "/cv-creator",
+    },
+    {
       nameForShow: "Simple React.Js Shop",
       pathForRedirect: "/shop1",
     },

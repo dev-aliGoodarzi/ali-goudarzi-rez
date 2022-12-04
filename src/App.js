@@ -74,6 +74,14 @@ const App = () => {
       pathInReal: "https://shop1.a-goodarzi.ir",
     },
     {
+      pathForRedirect: "/cv-creator",
+      pathInReal: "https://resume-builder.a-goodarzi.ir/",
+    },
+    {
+      pathForRedirect: "/ch-land",
+      pathInReal: "https://chocolatland.com/",
+    },
+    {
       pathForRedirect: "/shop2",
       pathInReal: "https://shop2.a-goodarzi.ir",
     },
