@@ -282,7 +282,7 @@
           justify-content: space-between;
 }
 
-.resumeContainer .left .programmingSkillsContainer {
+.resumeContainer .left .skills {
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,7 +304,7 @@
   font-family: "popins-regular";
 }
 
-.resumeContainer .left .programmingSkillsContainer .containerName {
+.resumeContainer .left .skills .containerName {
   height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,13 +317,13 @@
   font-weight: bold;
 }
 
-.resumeContainer .left .programmingSkillsContainer .containerName span {
+.resumeContainer .left .skills .containerName span {
   margin-right: 1rem;
   font-size: 3rem;
   font-weight: bold;
 }
 
-.resumeContainer .left .programmingSkillsContainer .skillsProgressContainer {
+.resumeContainer .left .skills .skillsProgressContainer {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -150,7 +150,7 @@ const Skills = ({ themeColor }) => {
           })}
         </div>
       </div>
-      <div className={styles.programmingSkillsContainer}>
+      <div className={styles.selfSkills}>
         <p className={styles.containerName}>
           <span style={{ color: themeColor }}>Basic </span> Skills
         </p>
@@ -166,7 +166,7 @@ const Skills = ({ themeColor }) => {
           })}
         </div>
       </div>
-      <div className={styles.programmingSkillsContainer}>
+      <div className={styles.selfSkills}>
         <p className={styles.containerName}>
           <span style={{ color: themeColor }}>Front-End</span> Skills
         </p>
@@ -182,7 +182,7 @@ const Skills = ({ themeColor }) => {
           })}
         </div>
       </div>
-      <div className={styles.programmingSkillsContainer}>
+      <div className={styles.selfSkills}>
         <p className={styles.containerName}>
           <span style={{ color: themeColor }}>Back-End</span> Skills
         </p>
