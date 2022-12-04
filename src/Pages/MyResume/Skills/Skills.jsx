@@ -12,7 +12,7 @@ const Skills = ({ themeColor }) => {
   const basicSkills = [
     {
       id: "c-code",
-      name: "clean code",
+      name: "Clean code",
       value: 90,
     },
     {
@@ -57,45 +57,52 @@ const Skills = ({ themeColor }) => {
     {
       id: "frontEnd2",
       name: "SASS & SCSS",
-      value: 85,
+      value: 90,
     },
     {
       id: "frontEnd3",
       name: "JavaScript",
-      value: 85,
+      value: 90,
     },
     {
       id: "frontEnd4",
       name: "React.Js",
-      value: 80,
+      value: 85,
     },
     {
       id: "frontEnd5",
       name: "React Hooks",
-      value: 70,
+      value: 80,
     },
     {
       id: "frontEnd6",
       name: "TypeScript",
-      value: 60,
+      value: 70,
     },
     {
       id: "frontEnd7",
       name: "Tailwind",
-      value: 50,
+      value: 60,
     },
   ];
   const backEndSkills = [
     {
       id: "backend 1",
       name: "Node.Js (Learning)",
-      value: 25,
+      value: 40,
     },
     {
       id: "backend 2",
       name: "Express.Js (Learning)",
-      value: 10,
+      value: 30,
     },
+    {
+      id: "backend 10",
+      name: "Koa.Js (Learning)",
+      value: 5,
+    },
+  ];
+  const databaseSkills = [
     {
       id: "backend 3",
       name: "SQL (Learning)",
@@ -104,11 +111,6 @@ const Skills = ({ themeColor }) => {
     {
       id: "backend 4",
       name: "MongoDB (Learning)",
-      value: 5,
-    },
-    {
-      id: "backend 5",
-      name: "Graph QL (Learning)",
       value: 5,
     },
     {
@@ -121,14 +123,28 @@ const Skills = ({ themeColor }) => {
       name: "Elastic Search (Learning)",
       value: 5,
     },
-    {
-      id: "backend 8",
-      name: "Socket Writing (Learning)",
-      value: 5,
-    },
+  ];
+  const microServiceSkills = [
     {
       id: "backend 9",
       name: "Rabbit MQ (Learning)",
+      value: 5,
+    },
+  ];
+  const apiWritingSkills = [
+    {
+      id: "backend 12",
+      name: "REST Api (Learning)",
+      value: 70,
+    },
+    {
+      id: "backend 5",
+      name: "Graph QL (Learning)",
+      value: 5,
+    },
+    {
+      id: "backend 8",
+      name: "Socket Writing (Learning)",
       value: 5,
     },
   ];
@@ -188,6 +204,54 @@ const Skills = ({ themeColor }) => {
         </p>
         <div className={styles.skillsProgressContainer}>
           {backEndSkills.map((item) => {
+            return (
+              <CardForSkills
+                key={item.id}
+                item={item}
+                themeColor={themeColor}
+              />
+            );
+          })}
+        </div>
+      </div>{" "}
+      <div className={styles.selfSkills}>
+        <p className={styles.containerName}>
+          <span style={{ color: themeColor }}>Data Base</span> Skills
+        </p>
+        <div className={styles.skillsProgressContainer}>
+          {databaseSkills.map((item) => {
+            return (
+              <CardForSkills
+                key={item.id}
+                item={item}
+                themeColor={themeColor}
+              />
+            );
+          })}
+        </div>
+      </div>{" "}
+      <div className={styles.selfSkills}>
+        <p className={styles.containerName}>
+          <span style={{ color: themeColor }}>Api Writing</span> Skills
+        </p>
+        <div className={styles.skillsProgressContainer}>
+          {apiWritingSkills.map((item) => {
+            return (
+              <CardForSkills
+                key={item.id}
+                item={item}
+                themeColor={themeColor}
+              />
+            );
+          })}
+        </div>
+      </div>{" "}
+      <div className={styles.selfSkills}>
+        <p className={styles.containerName}>
+          <span style={{ color: themeColor }}>MicroService</span> Skills
+        </p>
+        <div className={styles.skillsProgressContainer}>
+          {microServiceSkills.map((item) => {
             return (
               <CardForSkills
                 key={item.id}
