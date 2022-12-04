@@ -92,10 +92,6 @@ div {
 
 @media screen and (max-width: 900px) {
   #root {
-    width: 100vw;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

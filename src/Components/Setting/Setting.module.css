@@ -7,8 +7,8 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  right: 0;
-  top: 35%;
+  right: 0.8rem;
+  top: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,12 +27,11 @@
 
 .settingContainer .settingIcon {
   position: absolute;
-  left: -4.2rem;
+  left: 21vw;
   background-color: #fff;
   position: 50;
   border-radius: 50%;
   top: 1rem;
-  left: calc(15vw - 5rem);
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
   -webkit-box-sizing: border-box;
@@ -44,8 +43,8 @@
 }
 
 .settingContainer .contnets {
-  width: 15vw;
-  height: 40vh;
+  width: 25vw;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
