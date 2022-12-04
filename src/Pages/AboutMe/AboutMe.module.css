@@ -47,7 +47,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
-  font-size: 5rem;
+  font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,27 +67,30 @@
   width: 100%;
   color: rgba(204, 204, 204, 0.116);
   text-align: center;
-  font-size: 10rem;
+  font-size: 6rem;
   font-family: "popins-bold";
   letter-spacing: 1ch;
 }
 
 .aboutMePageCntainer .advantagesContainer .aboutMe {
   width: 90%;
+  position: relative;
+  right: 5%;
   text-align: justify;
+  font-size: 1.6rem;
   font-family: popins-regular;
   color: #ccc;
-  font-size: 3rem;
 }
 
 .aboutMePageCntainer .advantagesContainer .aboutMe span {
   font-family: popins-bold;
-  font-size: 3rem;
+  font-size: 1.6rem;
 }
 
 .aboutMePageCntainer .advantagesContainer .myServices {
-  width: 90%;
+  width: 100%;
   margin-top: 3vh;
+  position: relative;
 }
 
 .aboutMePageCntainer .advantagesContainer .myServices div {
@@ -95,12 +98,12 @@
 }
 
 .aboutMePageCntainer .advantagesContainer .myServices p.myServicesLOGO {
-  font-size: 4rem;
+  font-size: 1.6rem;
   font-family: popins-regular;
 }
 
 .aboutMePageCntainer .advantagesContainer .myServices p.myServicesLOGO span {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .aboutMePageCntainer font {

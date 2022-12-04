@@ -31,7 +31,7 @@
     scrollbar-width: none;
     background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
     font : {
-      size: 5rem;
+      size: 3rem;
     }
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@
       color: rgba(204, 204, 204, 0.116);
       text-align: center;
       font : {
-        size: 10rem;
+        size: 6rem;
         family: "popins-bold";
       }
 
@@ -51,24 +51,26 @@
     }
     .aboutMe {
       width: 90%;
+      position: relative;
+      right: 5%;
       text-align: justify;
       font : {
+        size: 1.6rem;
         family: popins-regular;
       }
       color: #ccc;
+
       span {
         font : {
           family: popins-bold;
-          size: 3rem;
+          size: 1.6rem;
         }
-      }
-      font : {
-        size: 3rem;
       }
     }
     .myServices {
-      width: 90%;
+      width: 100%;
       margin-top: 3vh;
+      position: relative;
       div {
         font : {
           size: 8rem;
@@ -76,12 +78,12 @@
       }
       p.myServicesLOGO {
         font : {
-          size: 4rem;
+          size: 1.6rem;
           family: popins-regular;
         }
         span {
           font : {
-            size: 4rem;
+            size: 3rem;
           }
         }
       }
