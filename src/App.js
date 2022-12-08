@@ -97,6 +97,10 @@ const App = () => {
       pathForRedirect: "/my-pizza",
       pathInReal: "https://my-pizza.ir",
     },
+    {
+      pathForRedirect: "/calculator",
+      pathInReal: "https://calculator.a-goodarzi.ir",
+    },
   ];
   return (
     <>

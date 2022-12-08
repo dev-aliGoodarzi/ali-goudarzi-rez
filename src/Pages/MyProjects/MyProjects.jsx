@@ -52,6 +52,10 @@ const MyProjects = ({ themeColor }) => {
       pathForRedirect: "/ch-land",
     },
     {
+      nameForShow: "Online Calculator",
+      pathForRedirect: "/calculator",
+    },
+    {
       nameForShow: "CV Creator",
       pathForRedirect: "/cv-creator",
     },
