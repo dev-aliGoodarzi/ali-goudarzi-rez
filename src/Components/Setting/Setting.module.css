@@ -212,7 +212,6 @@
   }
   .settingContainer.open {
     width: 60vw !important;
-    right: 0;
     left: 40vw;
   }
   .settingContainer.open .contnets {
