@@ -55,11 +55,23 @@ const Education = ({ themeColor }) => {
     {
       id: "edu-7",
       name: "Node.Js ( Learning )",
-      teacher: "Erfan Yousefi",
+      teacher: "Mosh Hamedani",
       icon: <FaNodeJs />,
     },
     {
       id: "edu-8",
+      name: "Express.Js ( Learning )",
+      teacher: "Mosh Hamedani",
+      icon: <SiExpress />,
+    },
+    {
+      id: "edu-9",
+      name: "Node.Js ( Learning )",
+      teacher: "Erfan Yousefi",
+      icon: <FaNodeJs />,
+    },
+    {
+      id: "edu-10",
       name: "Express.Js ( Learning )",
       teacher: "Erfan Yousefi",
       icon: <SiExpress />,
