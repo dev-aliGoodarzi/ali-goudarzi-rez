@@ -101,6 +101,11 @@ const Skills = ({ themeColor }) => {
       name: "Koa.Js (Learning)",
       value: 5,
     },
+    {
+      id: "backend 16",
+      name: "Fastify.Js (Learning)",
+      value: 5,
+    },
   ];
   const databaseSkills = [
     {
@@ -128,6 +133,11 @@ const Skills = ({ themeColor }) => {
     {
       id: "backend 9",
       name: "Rabbit MQ (Learning)",
+      value: 5,
+    },
+    {
+      id: "backend 15",
+      name: "gRPC (Learning)",
       value: 5,
     },
   ];

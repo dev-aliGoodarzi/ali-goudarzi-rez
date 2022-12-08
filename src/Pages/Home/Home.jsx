@@ -19,7 +19,9 @@ const Home = ({ themeColor, fontSize }) => {
       <div className={styles.overlay}></div>
       <div className={styles.centerContent}>
         <p className={styles.name}>
-          <span>Ali</span>
+          <span style={{ fontSize: `${fontSize && `${fontSize}rem`}` }}>
+            Ali
+          </span>
           <span style={{ fontSize: `${fontSize && `${fontSize}rem`}` }}>
             Goudarzi
           </span>
