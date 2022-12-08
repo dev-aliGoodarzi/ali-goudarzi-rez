@@ -167,6 +167,7 @@ const Skills = ({ themeColor }) => {
       value: 5,
     },
   ];
+
   return (
     <>
       <div className={styles.selfSkills}>
