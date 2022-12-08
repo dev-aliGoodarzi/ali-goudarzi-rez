@@ -25,6 +25,11 @@ const Skills = ({ themeColor }) => {
       name: "GIT",
       value: 50,
     },
+    {
+      id: "docker",
+      name: "Docker ( Learning )",
+      value: 10,
+    },
   ];
   const selfSkills = [
     {
@@ -48,6 +53,18 @@ const Skills = ({ themeColor }) => {
       value: 70,
     },
   ];
+  const programmingLanguagesSkills = [
+    {
+      id: "frontEnd3",
+      name: "JavaScript",
+      value: 90,
+    },
+    {
+      id: "frontEnd6",
+      name: "TypeScript",
+      value: 70,
+    },
+  ];
   const frontEndSkills = [
     {
       id: "frontEnd1",
@@ -59,14 +76,10 @@ const Skills = ({ themeColor }) => {
       name: "SASS & SCSS",
       value: 90,
     },
-    {
-      id: "frontEnd3",
-      name: "JavaScript",
-      value: 90,
-    },
+
     {
       id: "frontEnd4",
-      name: "React.Js",
+      name: "React.Js ( .tsx )",
       value: 85,
     },
     {
@@ -74,11 +87,7 @@ const Skills = ({ themeColor }) => {
       name: "React Hooks",
       value: 80,
     },
-    {
-      id: "frontEnd6",
-      name: "TypeScript",
-      value: 70,
-    },
+
     {
       id: "frontEnd7",
       name: "Tailwind",
@@ -115,7 +124,7 @@ const Skills = ({ themeColor }) => {
     },
     {
       id: "backend 4",
-      name: "MongoDB (Learning)",
+      name: "NoSQL => MongoDB (Learning)",
       value: 5,
     },
     {
@@ -182,6 +191,22 @@ const Skills = ({ themeColor }) => {
         </p>
         <div className={styles.skillsProgressContainer}>
           {basicSkills.map((item) => {
+            return (
+              <CardForSkills
+                key={item.id}
+                item={item}
+                themeColor={themeColor}
+              />
+            );
+          })}
+        </div>
+      </div>
+      <div className={styles.selfSkills}>
+        <p className={styles.containerName}>
+          <span style={{ color: themeColor }}>Programming </span> Skills
+        </p>
+        <div className={styles.skillsProgressContainer}>
+          {programmingLanguagesSkills.map((item) => {
             return (
               <CardForSkills
                 key={item.id}
