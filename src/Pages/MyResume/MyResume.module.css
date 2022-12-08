@@ -369,7 +369,8 @@
   .resumeContainer .left .experienceContainer .containerName,
   .resumeContainer .left .educationContainer .containerName {
     position: relative;
-    left: 2.5vw;
+    left: 2.5rem;
+    font-size: 2.5rem;
   }
   .resumeContainer .left .selfSkills,
   .resumeContainer .left .programmingSkillsContainer {
@@ -377,6 +378,12 @@
   }
   .resumeContainer .left .selfSkills .containerName,
   .resumeContainer .left .programmingSkillsContainer .containerName {
+    font-size: 2rem;
+  }
+  .resumeContainer .left .selfSkills .containerName {
+    font-size: 2rem;
+  }
+  .resumeContainer .left .selfSkills .containerName span {
     font-size: 2rem;
   }
 }

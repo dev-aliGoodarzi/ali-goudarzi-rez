@@ -292,7 +292,10 @@
         }
         .containerName {
           position: relative;
-          left: 2.5vw;
+          left: 2.5rem;
+          font : {
+            size: 2.5rem;
+          }
         }
       }
       .selfSkills,
@@ -303,6 +306,18 @@
         .containerName {
           font : {
             size: 2rem;
+          }
+        }
+      }
+      .selfSkills {
+        .containerName {
+          font : {
+            size: 2rem;
+          }
+          span {
+            font : {
+              size: 2rem;
+            }
           }
         }
       }

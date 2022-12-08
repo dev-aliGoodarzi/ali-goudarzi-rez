@@ -144,7 +144,7 @@ const Skills = ({ themeColor }) => {
   const apiWritingSkills = [
     {
       id: "backend 12",
-      name: "REST Api (Learning)",
+      name: "REST Api",
       value: 70,
     },
     {

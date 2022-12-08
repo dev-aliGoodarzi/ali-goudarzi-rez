@@ -11,9 +11,9 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cardForSkills .aboutCurr {
@@ -90,7 +90,6 @@
   }
   .cardForSkills p {
     font-size: 2rem;
-    margin-bottom: 0.5vh;
   }
   .cardForSkills p span {
     font-size: 2rem;
