@@ -9,8 +9,7 @@
   -moz-border-radius: 3rem;
   -ms-border-radius: 3rem;
   -o-border-radius: 3rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 2rem;
   transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
@@ -19,27 +18,18 @@
   -o-transition: 0.2s ease all;
   margin-top: 2rem;
   font-size: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   color: #fff;
   font-family: popins-regular;
   font-size: 4rem;
 }
-
 .contactCardItem:hover {
   border: 2px solid;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  transform: scale(1.01);
   background: rgba(255, 255, 255, 0.1);
 }
-
 .contactCardItem svg {
   font-size: 7rem;
 }
@@ -50,5 +40,4 @@
     right: 0 !important;
     left: 2.5vw !important;
   }
-}
-/*# sourceMappingURL=ContactCard.module.css.map */
+}/*# sourceMappingURL=ContactCard.module.css.map */

@@ -1,32 +1,29 @@
 .projectCard {
-  width: 80%;
-  height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 42%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: flex;
+  flex-direction: column;
   margin-top: 5px;
-  -webkit-box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.2);
   color: #fff;
   position: relative;
-  left: 10%;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  align-items: center;
+  box-sizing: border-box;
   padding: 1rem;
   margin-top: 2rem;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: popins-regular;
+}
+.projectCard .iframe {
+  width: 80%;
+  height: 30vh;
 }
 
 @media screen and (max-width: 900px) {
   .projectCard {
     width: 95%;
-    left: 2.5%;
     font-size: 2.6rem;
   }
-}
-/*# sourceMappingURL=ProjectCard.module.css.map */
+}/*# sourceMappingURL=ProjectCard.module.css.map */

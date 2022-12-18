@@ -1,25 +1,15 @@
 .notFound {
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-image: url("../../../Images/main-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: "no-repeat";
 }
-
 .notFound p {
   width: 100%;
   height: -webkit-max-content;
@@ -32,7 +22,6 @@
   font-size: 3vw;
   background-color: rgba(0, 0, 0, 0.663);
 }
-
 .notFound img {
   width: 50%;
   height: 30%;
@@ -48,45 +37,33 @@
   --webkit-animation-fill-mode: forwards;
   position: relative;
 }
-
 .notFound .itemsContainer {
   width: 30%;
   height: 5vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .notFound .itemsContainer a,
 .notFound .itemsContainer button {
   width: 10vw;
   border: 2px solid #63f;
   border-radius: 2vw;
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
   margin-top: 4rem;
-  color: #ffff;
+  color: white;
   background-color: red;
   font-size: 1.5vw;
   text-align: center;
 }
-
 .notFound .itemsContainer a:hover,
 .notFound .itemsContainer button:hover {
   border-color: transparent;
   background-color: #0af;
 }
-
 @media screen and (max-width: 900px) {
   .notFound {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding: 1rem;
   }
   .notFound p {
@@ -104,23 +81,16 @@
     width: max-content;
   }
   .notFound .itemsContainer a,
-  .notFound .itemsContainer button {
+.notFound .itemsContainer button {
     width: 40vw;
     height: 5rem;
     font-size: 2.2rem;
     font-family: popins-regular;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
 }
-
 @-webkit-keyframes sssssf {
   0% {
     top: 0px;
@@ -138,7 +108,6 @@
     top: 0px;
   }
 }
-
 @keyframes sssssf {
   0% {
     top: 0px;
@@ -155,5 +124,4 @@
   100% {
     top: 0px;
   }
-}
-/*# sourceMappingURL=E__404.module.css.map */
+}/*# sourceMappingURL=E__404.module.css.map */

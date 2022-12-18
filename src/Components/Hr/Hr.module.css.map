@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,WAAW;EACnB,UAAU,EAAE,eAAe;EAC3B,aAAa,EAAE,eAAe;EAC9B,KAAK,EAAE,KAAK;EAEV,SAAI,EAAE,IAAI;CAKb;;AAZD,AASE,KATG,CASH,MAAM,CAAC;EACL,KAAK,EAAE,IAAI;CACZ",
-    "sources": [
-        "Hr.module.scss"
-    ],
-    "names": [],
-    "file": "Hr.module.css"
-}
+{"version":3,"sources":["Hr.module.scss","Hr.module.css"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,2BAAA;EAAA,wBAAA;EAAA,mBAAA;EACA,2BAAA;EACA,8BAAA;EACA,YAAA;EAEE,eAAA;ACAJ;ADEE;EACE,WAAA;ACAJ","file":"Hr.module.css"}

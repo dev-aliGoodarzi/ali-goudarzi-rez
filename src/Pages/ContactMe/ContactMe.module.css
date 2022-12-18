@@ -1,38 +1,23 @@
 .contactMeContainer {
   width: calc(100vw - 4.4rem) !important;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: 1s ease opacity;
+  align-items: center;
+  justify-content: space-between;
   transition: 1s ease opacity;
   opacity: 0;
   background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
 }
-
 .contactMeContainer .imageContainer {
   width: 24%;
   height: 100%;
   position: fixed;
   right: 0;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .contactMeContainer .imageContainer img {
   width: 100%;
   height: 100%;
@@ -50,5 +35,4 @@
   .contactMeContainer .imageContainer {
     display: none;
   }
-}
-/*# sourceMappingURL=ContactMe.module.css.map */
+}/*# sourceMappingURL=ContactMe.module.css.map */

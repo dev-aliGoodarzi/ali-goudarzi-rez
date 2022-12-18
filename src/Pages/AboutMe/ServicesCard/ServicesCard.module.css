@@ -1,37 +1,23 @@
 .serviceCard {
   width: 90%;
   min-height: 20rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 20px;
-  -webkit-box-shadow: 0 15px 55px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 15px 55px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 55px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
   margin-top: 2vh;
-  -webkit-transition: 0.1s ease all;
   transition: 0.1s ease all;
   font-size: 2.5rem !important;
   font-family: popins-regular;
 }
-
 .serviceCard:hover {
   border: 2px solid;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  transform: scale(1.01);
   background: rgba(255, 255, 255, 0.05);
 }
-
 .serviceCard p {
   text-align: left;
 }
@@ -45,5 +31,4 @@
   .serviceCard .logoContainer {
     font-size: 6rem !important;
   }
-}
-/*# sourceMappingURL=ServicesCard.module.css.map */
+}/*# sourceMappingURL=ServicesCard.module.css.map */
