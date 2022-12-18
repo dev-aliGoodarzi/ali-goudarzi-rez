@@ -18,9 +18,12 @@ const ProjectCard = ({
     >
       <ReactTooltip />
       {/* Show Personal Projects website */}
-      <iframe src={realRoute} className={styles.iframe}></iframe>
+      <iframe
+        src={realRoute}
+        className={styles.iframe}
+        title={nameForShow}
+      ></iframe>
       {/* Show Personal Projects website */}
-      
       <span className={styles.left} style={{ color: themeColor }}>
         {nameForShow}
       </span>{" "}
