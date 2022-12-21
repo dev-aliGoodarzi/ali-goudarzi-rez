@@ -60,45 +60,45 @@ const MyProjects = ({ themeColor }) => {
     {
       nameForShow: "Chocolate shop",
       pathForRedirect: "/ch-land",
-      realRoute: "",
+      realRoute: "https://chocolatland.com/",
     },
     {
       nameForShow: "Online Calculator",
       pathForRedirect: "/calculator",
-      realRoute: "",
+      realRoute: "https://calculator.a-goodarzi.ir",
     },
     {
       nameForShow: "CV Creator",
       pathForRedirect: "/cv-creator",
-      realRoute: "",
+      realRoute: "https://resume-builder.a-goodarzi.ir/",
     },
     {
       nameForShow: "Simple React.Js Shop",
       pathForRedirect: "/shop1",
-      realRoute: "",
+      realRoute: "https://shop1.a-goodarzi.ir",
     },
     {
       nameForShow: "Simple React.Js Shop",
       pathForRedirect: "/shop2",
-      realRoute: "",
+      realRoute: "https://shop2.a-goodarzi.ir",
     },
     {
       nameForShow: "Simple React.Js contact-creator",
       pathForRedirect: "/contact-creator",
-      realRoute: "",
+      realRoute: "https://contact-creator.a-goodarzi.ir",
     },
     {
       nameForShow: "Simple React.Js newsWeb",
       pathForRedirect: "/siah-sefid-mag",
-      realRoute: "",
+      realRoute: "https://siah-sefid-mag.ir",
     },
     {
       nameForShow: "Simple React.Js fastFood Shop",
       pathForRedirect: "/my-pizza",
-      realRoute: "",
+      realRoute: "https://my-pizza.ir",
     },
   ];
-  
+
   const projectsRef = React.createRef();
 
   useEffect(() => {
