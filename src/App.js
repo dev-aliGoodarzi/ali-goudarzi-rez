@@ -13,7 +13,7 @@ import CustomRedirection from "./Components/CustomRedirector/CustomRedirector";
 
 import musicFile from "./music/music.mp3";
 import ContactMe from "./Pages/ContactMe/ContactMe";
-// import { Particle } from "./Components/Particle/Particle";
+
 const App = () => {
   const [themeColor, setThemeColor] = useState("#ee6192");
   const [fontSize, setFontSize] = useState();
