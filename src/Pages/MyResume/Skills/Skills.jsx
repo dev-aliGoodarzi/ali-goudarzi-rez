@@ -63,6 +63,14 @@ const Skills = ({ themeColor }) => {
       id: "frontEnd6",
       name: "TypeScript",
       value: 70,
+    },{
+      id: "frontEnd88",
+      name: "C#",
+      value: 40,
+    },{
+      id: "frontEnd65",
+      name: "Python",
+      value: 20,
     },
   ];
   const frontEndSkills = [
