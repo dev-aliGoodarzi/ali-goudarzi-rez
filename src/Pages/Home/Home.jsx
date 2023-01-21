@@ -32,7 +32,7 @@ const Home = ({ themeColor, fontSize }) => {
             options={{
               strings: [
                 "Mid Level FrontEnd Web Developer .",
-                "Working Forme Home ( Remote )  .",
+                "Working Form Home ( Remote )  .",
                 "Learning right now Node.Js & Express.Js .",
                 "Trying To be MERN Stack Web Developer .",
               ],
