@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const LinkCustom = ({
   data: { id, to, icon, dataTip, isBackgroundColored },
@@ -10,9 +10,11 @@ const LinkCustom = ({
   onMouseLeave,
 }) => {
   return (
-    <Link
+    <NavLink
       id={id}
-      style={{ color: `${isBackgroundColored ? themeColor : "#fff"}` }}
+      style={({ isActive }) => {
+        return isActive ? { color: `${themeColor}` } : { color: "#fff" };
+      }}
       data-tip={dataTip}
       to={to}
       onClick={onClick}
@@ -20,7 +22,7 @@ const LinkCustom = ({
       onMouseLeave={onMouseLeave}
     >
       {icon}
-    </Link>
+    </NavLink>
   );
 };
 
