@@ -246,8 +246,17 @@ const Skills = ({ themeColor }) => {
       </div>
       <div className={styles.selfSkills}>
         <p className={styles.containerName}>
-          <span style={{ color: themeColor }}>Back-End</span> Skills
-          <span style={{ color: themeColor }}>{"( Learning )"}</span>
+          <span style={{ color: themeColor }}>Back-End</span> Skills{" "}
+          <span
+            style={{
+              color: themeColor,
+              fontSize: "60%",
+              marginLeft: "2rem",
+              marginTop: "0.4rem",
+            }}
+          >
+            {`( Learning )`}
+          </span>
         </p>
         <div className={styles.skillsProgressContainer}>
           {backEndSkills.map((item) => {
@@ -264,7 +273,16 @@ const Skills = ({ themeColor }) => {
       <div className={styles.selfSkills}>
         <p className={styles.containerName}>
           <span style={{ color: themeColor }}>Data Base</span> Skills
-          <span style={{ color: themeColor }}>{"( Learning )"}</span>
+          <span
+            style={{
+              color: themeColor,
+              fontSize: "60%",
+              marginLeft: "2rem",
+              marginTop: "0.4rem",
+            }}
+          >
+            {`( Learning )`}
+          </span>
         </p>
         <div className={styles.skillsProgressContainer}>
           {databaseSkills.map((item) => {
@@ -281,7 +299,16 @@ const Skills = ({ themeColor }) => {
       <div className={styles.selfSkills}>
         <p className={styles.containerName}>
           <span style={{ color: themeColor }}>Api Writing</span> Skills
-          <span style={{ color: themeColor }}>{"( Learning )"}</span>
+          <span
+            style={{
+              color: themeColor,
+              fontSize: "60%",
+              marginLeft: "2rem",
+              marginTop: "0.4rem",
+            }}
+          >
+            {`( Learning )`}
+          </span>
         </p>
         <div className={styles.skillsProgressContainer}>
           {apiWritingSkills.map((item) => {
@@ -298,7 +325,16 @@ const Skills = ({ themeColor }) => {
       <div className={styles.selfSkills}>
         <p className={styles.containerName}>
           <span style={{ color: themeColor }}>MicroService</span> Skills
-          <span style={{ color: themeColor }}>{"( Learning )"}</span>
+          <span
+            style={{
+              color: themeColor,
+              fontSize: "60%",
+              marginLeft: "2rem",
+              marginTop: "0.4rem",
+            }}
+          >
+            {`( Learning )`}
+          </span>
         </p>
         <div className={styles.skillsProgressContainer}>
           {microServiceSkills.map((item) => {
