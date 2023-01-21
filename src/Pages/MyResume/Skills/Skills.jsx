@@ -269,7 +269,7 @@ const Skills = ({ themeColor }) => {
             );
           })}
         </div>
-      </div>{" "}
+      </div>
       <div className={styles.selfSkills}>
         <p className={styles.containerName}>
           <span style={{ color: themeColor }}>Data Base</span> Skills
@@ -295,7 +295,7 @@ const Skills = ({ themeColor }) => {
             );
           })}
         </div>
-      </div>{" "}
+      </div>
       <div className={styles.selfSkills}>
         <p className={styles.containerName}>
           <span style={{ color: themeColor }}>Api Writing</span> Skills
@@ -321,7 +321,7 @@ const Skills = ({ themeColor }) => {
             );
           })}
         </div>
-      </div>{" "}
+      </div>
       <div className={styles.selfSkills}>
         <p className={styles.containerName}>
           <span style={{ color: themeColor }}>MicroService</span> Skills
