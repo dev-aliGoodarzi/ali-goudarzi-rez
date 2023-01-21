@@ -7,7 +7,7 @@ import styles from "./ProjectCard.module.css";
 // Components
 import { Link } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
-import Iframe from 'react-iframe'
+import Iframe from "react-iframe";
 // Components
 // Modules
 // Modules
@@ -23,13 +23,13 @@ const ProjectCard = ({
     >
       <ReactTooltip />
       {/* Show Personal Projects website */}
-      <Iframe
+      {/* <Iframe
         url={realRoute}
         id=""
         className="iframe"
         display="block"
         position="relative"
-      />
+      /> */}
       {/* Show Personal Projects website */}
       <span className={styles.left} style={{ color: themeColor }}>
         {nameForShow}
