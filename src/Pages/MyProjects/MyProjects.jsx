@@ -8,97 +8,99 @@ const MyProjects = ({ themeColor }) => {
     {
       nameForShow: "simple Project1",
       pathForRedirect: "/simpleProject1",
-      realRoute: "",
+      realRoute: "https://project1.a-goodarzi.ir",
     },
     {
       nameForShow: "simple Project2",
       pathForRedirect: "/simple Project2",
-      realRoute: "",
+      realRoute: "https://project2.a-goodarzi.ir",
     },
     {
       nameForShow: "simple Project3",
       pathForRedirect: "/simple Project3",
-      realRoute: "",
+      realRoute: "https://project3.a-goodarzi.ir",
     },
     {
       nameForShow: "simple Project4",
       pathForRedirect: "/simpleProject4",
-      realRoute: "",
+      realRoute: "https://project4.a-goodarzi.ir",
     },
     {
       nameForShow: "simple Project5",
       pathForRedirect: "/simpleProject5",
-      realRoute: "",
+      realRoute: "https://project5.a-goodarzi.ir",
     },
     {
       nameForShow: "simple Project6",
       pathForRedirect: "/simpleProject6",
-      realRoute: "",
+      realRoute: "https://project6.a-goodarzi.ir",
     },
     {
       nameForShow: "simple Project7",
       pathForRedirect: "/simpleProject7",
-      realRoute: "",
+      realRoute: "https://project7.a-goodarzi.ir",
     },
     {
       nameForShow: "simple Project8",
       pathForRedirect: "/simpleProject8",
-      realRoute: "",
+      realRoute: "https://project8.a-goodarzi.ir",
     },
     {
       nameForShow: "simple Project9",
       pathForRedirect: "/simpleProject9",
-      realRoute: "",
+      realRoute: "https://project9.a-goodarzi.ir",
     },
     {
       nameForShow: "simple Project10",
       pathForRedirect: "/simpleProject10",
-      realRoute: "",
+      realRoute: "https://project10.a-goodarzi.ir",
     },
   ];
   const myAdvanceProjects = [
     {
       nameForShow: "Chocolate shop",
       pathForRedirect: "/ch-land",
-      realRoute: "",
+      realRoute: "https://chocolatland.com/",
     },
     {
       nameForShow: "Online Calculator",
       pathForRedirect: "/calculator",
-      realRoute: "",
+      realRoute: "https://calculator.a-goodarzi.ir",
     },
     {
       nameForShow: "CV Creator",
       pathForRedirect: "/cv-creator",
-      realRoute: "",
+      realRoute: "https://resume-builder.a-goodarzi.ir/",
     },
     {
       nameForShow: "Simple React.Js Shop",
       pathForRedirect: "/shop1",
-      realRoute: "",
+      realRoute: "https://shop1.a-goodarzi.ir",
     },
     {
       nameForShow: "Simple React.Js Shop",
       pathForRedirect: "/shop2",
-      realRoute: "",
+      realRoute: "https://shop2.a-goodarzi.ir",
     },
     {
       nameForShow: "Simple React.Js contact-creator",
       pathForRedirect: "/contact-creator",
-      realRoute: "",
+      realRoute: "https://contact-creator.a-goodarzi.ir",
     },
     {
       nameForShow: "Simple React.Js newsWeb",
       pathForRedirect: "/siah-sefid-mag",
-      realRoute: "",
+      realRoute: "https://siah-sefid-mag.ir",
     },
     {
       nameForShow: "Simple React.Js fastFood Shop",
       pathForRedirect: "/my-pizza",
-      realRoute: "",
+      realRoute: "https://my-pizza.ir",
     },
   ];
+
   const projectsRef = React.createRef();
+
   useEffect(() => {
     const timeOut = setTimeout(() => {
       projectsRef.current.style.opacity = 1;
@@ -110,7 +112,7 @@ const MyProjects = ({ themeColor }) => {
   return (
     <div className={`${styles.projectsContainer}`} ref={projectsRef}>
       <div className={styles.imageContainer}>
-        <img src={me} alt="my-pic" />
+        <img src={me} alt="my-pic" className="object-cover"/>
       </div>
       <div
         className={`flex flex-row items-center justify-center  ${styles.projects}`}

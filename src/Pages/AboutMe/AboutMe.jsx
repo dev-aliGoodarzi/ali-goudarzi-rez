@@ -96,7 +96,7 @@ const AboutMe = ({ themeColor, fontSize }) => {
         </div>
       </div>
       <div className={styles.imageContainer}>
-        <img src={me} alt="my-pic" />
+        <img src={me} alt="my-pic" className="object-cover"/>
       </div>
     </div>
   );
