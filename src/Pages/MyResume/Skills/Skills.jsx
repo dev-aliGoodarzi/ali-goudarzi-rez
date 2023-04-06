@@ -45,7 +45,7 @@ const Skills = ({ themeColor }) => {
     {
       id: "self-3",
       name: "Team Work",
-      value: 75,
+      value: 85,
     },
     {
       id: "self-4",
@@ -62,7 +62,7 @@ const Skills = ({ themeColor }) => {
     {
       id: "frontEnd6",
       name: "TypeScript",
-      value: 75,
+      value: 80,
     },
     {
       id: "frontEnd88",
@@ -95,17 +95,17 @@ const Skills = ({ themeColor }) => {
     {
       id: "frontEnd5",
       name: "React Hooks",
-      value: 80,
+      value: 85,
     },
     {
       id: "frontEnd8",
       name: "PWA",
-      value: 70,
+      value: 75,
     },
     {
       id: "frontEnd7",
       name: "Tailwind",
-      value: 60,
+      value: 70,
     },
   ];
   const backEndSkills = [
