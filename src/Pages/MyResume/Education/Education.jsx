@@ -83,7 +83,7 @@ const Education = ({ themeColor }) => {
       icon: <SiExpress />,
     },
   ];
-  
+
   return (
     <>
       <div className={styles.educationContainer}>
