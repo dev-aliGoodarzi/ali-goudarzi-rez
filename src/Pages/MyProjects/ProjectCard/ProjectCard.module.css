@@ -1,6 +1,5 @@
 .projectCard {
   width: 42%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;

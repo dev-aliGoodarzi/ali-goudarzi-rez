@@ -91,7 +91,6 @@
   }
   .aboutMePageCntainer .advantagesContainer {
     width: 100vw;
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     padding: 2rem;

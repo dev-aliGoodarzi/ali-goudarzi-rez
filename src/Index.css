@@ -44,7 +44,6 @@ body #root {
   position: relative;
   background: linear-gradient(335deg, #a419ac, #c850c0, #ffcc70);
   background-size: 600% 600%;
-  -webkit-animation: AnimationName 4s ease infinite;
   animation: AnimationName 4s ease infinite;
 }
 
@@ -52,18 +51,6 @@ span,
 p,
 div {
   transition: 0.4s ease color;
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 25%;
-  }
-  50% {
-    background-position: 100% 76%;
-  }
-  100% {
-    background-position: 0% 25%;
-  }
 }
 @keyframes AnimationName {
   0% {

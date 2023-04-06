@@ -1,10 +1,8 @@
 .settingContainer {
   position: absolute;
   z-index: 10;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   right: 0.8rem;
@@ -26,8 +24,7 @@
   transition: 0.5s ease all;
   box-sizing: border-box;
   padding: 0.5rem;
-  -webkit-animation: settingSpinner 2s backwards infinite;
-          animation: settingSpinner 2s backwards infinite;
+  animation: settingSpinner 2s backwards infinite;
   font-size: 4rem;
 }
 .settingContainer .contnets {
@@ -76,17 +73,12 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
-.settingContainer .contnets input:-ms-input-placeholder {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 .settingContainer .contnets input::placeholder {
   font-size: 1.5rem;
   font-weight: bold;
 }
 .settingContainer .contnets .musicControls {
   width: 50%;
-  height: -webkit-max-content !important;
   height: -moz-max-content !important;
   height: max-content !important;
   display: flex;
@@ -109,15 +101,6 @@
   left: 0;
   visibility: visible;
   opacity: 0.9;
-}
-
-@-webkit-keyframes settingSpinner {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes settingSpinner {

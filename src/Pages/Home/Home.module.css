@@ -40,7 +40,6 @@
   font-family: "popins-regular";
 }
 .home .centerContent p span {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 100%;
@@ -57,7 +56,6 @@
   font-size: 50px;
 }
 .home .centerContent .job {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   display: flex;
@@ -97,14 +95,14 @@
     font-size: 2rem !important;
   }
   .home .centerContent .job span,
-.home .centerContent .job div {
+  .home .centerContent .job div {
     display: flex;
     align-items: center;
     color: #fff;
     font-size: 1.5rem !important;
   }
   .home .centerContent .job span:nth-child(1),
-.home .centerContent .job div:nth-child(1) {
+  .home .centerContent .job div:nth-child(1) {
     font-size: 1.5rem !important;
   }
 }/*# sourceMappingURL=Home.module.css.map */

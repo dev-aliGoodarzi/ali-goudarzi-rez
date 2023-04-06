@@ -119,7 +119,6 @@
 }
 .resumeContainer .left .doneProjects .helperContent {
   width: 100%;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   display: flex;
@@ -228,23 +227,23 @@
     font-size: 2rem;
   }
   .resumeContainer .left .experienceContainer,
-.resumeContainer .left .educationContainer {
+  .resumeContainer .left .educationContainer {
     padding: 0 !important;
     left: 0 !important;
     margin-top: 2vh !important;
   }
   .resumeContainer .left .experienceContainer .containerName,
-.resumeContainer .left .educationContainer .containerName {
+  .resumeContainer .left .educationContainer .containerName {
     position: relative;
     left: 2.5rem;
     font-size: 2.5rem;
   }
   .resumeContainer .left .selfSkills,
-.resumeContainer .left .programmingSkillsContainer {
+  .resumeContainer .left .programmingSkillsContainer {
     margin-top: 2vh !important;
   }
   .resumeContainer .left .selfSkills .containerName,
-.resumeContainer .left .programmingSkillsContainer .containerName {
+  .resumeContainer .left .programmingSkillsContainer .containerName {
     font-size: 2rem;
   }
   .resumeContainer .left .selfSkills .containerName {

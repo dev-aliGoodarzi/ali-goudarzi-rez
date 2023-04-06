@@ -87,7 +87,11 @@ const Skills = ({ themeColor }) => {
       name: "React Hooks",
       value: 80,
     },
-
+    {
+      id: "frontEnd8",
+      name: "PWA",
+      value: 70,
+    },
     {
       id: "frontEnd7",
       name: "Tailwind",

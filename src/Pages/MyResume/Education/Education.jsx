@@ -9,7 +9,7 @@ import CardForEducation from "./CardForEducation/CardForEducation";
 // Components
 // Images
 import { FaNodeJs } from "react-icons/fa";
-import { IoLogoReact } from "react-icons/io5";
+import { IoLogoPwa, IoLogoReact } from "react-icons/io5";
 import { SiExpress, SiJavascript, SiTypescript } from "react-icons/si";
 import { AiOutlineHtml5 } from "react-icons/ai";
 // Images
@@ -54,29 +54,36 @@ const Education = ({ themeColor }) => {
     },
     {
       id: "edu-7",
+      name: "PWA",
+      teacher: "Iman Madaeny",
+      icon: <IoLogoPwa />,
+    },
+    {
+      id: "edu-8",
       name: "Node.Js ( Learning )",
       teacher: "Mosh Hamedani",
       icon: <FaNodeJs />,
     },
     {
-      id: "edu-8",
+      id: "edu-9",
       name: "Express.Js ( Learning )",
       teacher: "Mosh Hamedani",
       icon: <SiExpress />,
     },
     {
-      id: "edu-9",
+      id: "edu-10",
       name: "Node.Js ( Learning )",
       teacher: "Erfan Yousefi",
       icon: <FaNodeJs />,
     },
     {
-      id: "edu-10",
+      id: "edu-11",
       name: "Express.Js ( Learning )",
       teacher: "Erfan Yousefi",
       icon: <SiExpress />,
     },
   ];
+  
   return (
     <>
       <div className={styles.educationContainer}>

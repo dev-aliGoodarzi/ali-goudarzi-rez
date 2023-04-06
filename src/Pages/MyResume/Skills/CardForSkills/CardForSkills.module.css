@@ -48,16 +48,6 @@
     border-radius: 2rem;
   }
 }
-@-webkit-keyframes progress-animation {
-  from {
-    background-position: 0;
-    border-radius: 2rem;
-  }
-  to {
-    background-position: -300%;
-    border-radius: 2rem;
-  }
-}
 @media screen and (max-width: 900px) {
   .cardForSkills {
     width: 100vw;
