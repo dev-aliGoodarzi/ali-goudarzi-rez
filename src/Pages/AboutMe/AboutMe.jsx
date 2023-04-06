@@ -96,7 +96,17 @@ const AboutMe = ({ themeColor, fontSize }) => {
         </div>
       </div>
       <div className={styles.imageContainer}>
-        <img src={me} alt="my-pic" className="object-cover"/>
+        <img
+          src={me}
+          alt="my-pic"
+          className="object-cover"
+          onDrag={() => {
+            return false;
+          }}
+          onMouseDown={() => {
+            return false;
+          }}
+        />
       </div>
     </div>
   );
