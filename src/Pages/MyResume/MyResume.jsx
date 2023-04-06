@@ -24,13 +24,13 @@ const MyResume = ({ themeColor }) => {
 
   return (
     <div className={styles.resumeContainer} ref={resumeContainerRef}>
-      <div className={styles.left}>
+      <div className={`${styles.left}`}>
         <p className={styles.title}>RESUME</p>
         <Education themeColor={themeColor} />
         <Skills themeColor={themeColor} />
       </div>
       <div className={styles.imageContainer}>
-        <img src={me} alt="my-pic" className="object-cover" />
+        <img src={me} alt="my-pic" />
       </div>
     </div>
   );

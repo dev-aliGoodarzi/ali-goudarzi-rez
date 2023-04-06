@@ -13,7 +13,7 @@ const CardForEducation = ({
         //  .style.fontSize = "5rem";
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.border = "0";
+        e.currentTarget.style.border = "2px solid transparent";
       }}
     >
       <div className={styles.left}>
