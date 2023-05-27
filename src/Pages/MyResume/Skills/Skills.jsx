@@ -107,6 +107,11 @@ const Skills = ({ themeColor }) => {
       name: "Tailwind",
       value: 70,
     },
+        {
+      id: "frontEnd8",
+      name: "Next.Js",
+      value: 20,
+    },
   ];
   const backEndSkills = [
     {
