@@ -6,8 +6,7 @@
 
 .custom-redirector {
   width: 100%;
-  height: -moz-max-content;
-  height: max-content;
+  height: 100vh !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -329,7 +328,7 @@
     transform: rotate(-40deg);
   }
 }
-@media screen and (min-width: 1px) and (max-width: 900px) {
+@media screen and (min-width: 1px) and (max-width: 1200px) {
   .custom-redirector {
     width: 100vw !important;
     height: 94.6vh !important;

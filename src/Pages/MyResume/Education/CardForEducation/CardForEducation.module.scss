@@ -12,7 +12,6 @@
   background: rgba(255, 255, 255, 0.05);
   border: 2px solid transparent;
   transition: 0.1s ease all;
-
   .left {
     width: 60%;
     height: 100%;
@@ -61,12 +60,12 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .cardContainer {
-    width: 95vw;
+    width: 90vw !important;
     position: relative;
     left: 2.5vw;
-    height: 17vh;
+    height: 17.5rem;
     .left {
       width: 60%;
       .top {

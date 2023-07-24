@@ -22,7 +22,7 @@
   text-align: left;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .serviceCard {
     width: 100%;
     height: 25rem;

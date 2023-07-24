@@ -112,7 +112,7 @@ const MyProjects = ({ themeColor }) => {
   return (
     <div className={`${styles.projectsContainer}`} ref={projectsRef}>
       <div className={styles.imageContainer}>
-        <img src={me} alt="my-pic" className="object-cover"/>
+        <img src={me} alt="my-pic" className="object-contain" />
       </div>
       <div
         className={`flex flex-row items-center justify-center  ${styles.projects}`}

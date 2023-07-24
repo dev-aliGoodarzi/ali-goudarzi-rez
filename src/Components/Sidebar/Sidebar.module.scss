@@ -7,6 +7,8 @@
   justify-content: space-between;
   align-items: center;
   align-self: flex-start;
+  position: fixed;
+  z-index: 200;
   .top {
     width: 100%;
     height: 30%;
@@ -98,7 +100,7 @@
     }
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .asideContainer {
     width: 100vw;
     height: 5vh;
@@ -141,8 +143,15 @@
       }
     }
     .bottomLinks {
+      position: relative;
       .helperLinks {
         flex-direction: row;
+      }
+      a {
+        svg {
+          margin-right: 0.6rem;
+          font-size: 2rem;
+        }
       }
     }
   }

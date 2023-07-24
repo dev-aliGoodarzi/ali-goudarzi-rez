@@ -46,12 +46,12 @@
   font-size: 7rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .cardContainer {
-    width: 95vw;
+    width: 90vw !important;
     position: relative;
     left: 2.5vw;
-    height: 17vh;
+    height: 17.5rem;
   }
   .cardContainer .left {
     width: 60%;

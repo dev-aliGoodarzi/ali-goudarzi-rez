@@ -59,7 +59,7 @@
   border-color: transparent;
   background-color: #0af;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .notFound {
     box-sizing: border-box;
     padding: 1rem;

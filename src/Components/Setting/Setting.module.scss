@@ -1,5 +1,5 @@
 .settingContainer {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   width: max-content;
   height: max-content;
@@ -116,7 +116,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .settingContainer {
     width: 15vw;
     height: 40vh !important;

@@ -11,6 +11,8 @@
   -moz-transition: 1s ease opacity;
   -ms-transition: 1s ease opacity;
   -o-transition: 1s ease opacity;
+  position: relative;
+  left: 4.4rem;
   .projects {
     width: 77%;
     height: 100%;
@@ -36,13 +38,15 @@
       position: absolute;
       top: 0;
       left: 0;
+      object-fit: cover !important;
     }
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .projectsContainer {
     width: 100vw !important;
+    left: 0 !important;
     .projects {
       width: 100%;
     }

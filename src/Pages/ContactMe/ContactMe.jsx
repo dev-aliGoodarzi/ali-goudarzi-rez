@@ -50,7 +50,9 @@ const ContactMe = ({ themeColor }) => {
         })}
       </div>
       <div className={styles.imageContainer}>
-        <img src={me} alt="my-pic" />
+        <img src={me} alt="my-pic" 
+          className="object-contain"
+          />
       </div>
     </div>
   );

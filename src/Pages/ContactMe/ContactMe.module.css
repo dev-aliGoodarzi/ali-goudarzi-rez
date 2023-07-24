@@ -6,6 +6,8 @@
   justify-content: space-between;
   transition: 1s ease opacity;
   opacity: 0;
+  position: relative;
+  left: 4.4rem;
   background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
 }
 .contactMeContainer .imageContainer {
@@ -24,9 +26,11 @@
   position: absolute;
   top: 0;
   left: 0;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .contactMeContainer {
     width: 100vw !important;
     right: 0 !important;

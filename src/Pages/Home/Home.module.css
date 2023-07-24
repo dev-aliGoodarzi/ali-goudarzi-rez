@@ -1,6 +1,8 @@
 .home {
   width: calc(100vw - 4.4rem) !important;
   height: 100vh;
+  position: relative;
+  left: 4.4rem;
   background-image: url("../../Images/main-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -80,10 +82,11 @@
   font-size: 2rem !important;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .home {
     width: 100vw !important;
-    height: 95vh !important;
+    height: 100vh !important;
+    left: 0 !important;
   }
   .home .centerContent {
     height: 15vh;

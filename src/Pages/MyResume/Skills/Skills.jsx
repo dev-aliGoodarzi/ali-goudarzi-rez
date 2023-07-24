@@ -109,12 +109,12 @@ const Skills = ({ themeColor }) => {
     },
     {
       id: "frontEnd10",
-      name: "Redux => ToolKit + Saga",
+      name: "Redux( ToolKit )",
       value: 60,
     },
     {
       id: "frontEnd9",
-      name: "Bootstrap",
+      name: "ReactStrap + Bootstrap",
       value: 60,
     },
     {

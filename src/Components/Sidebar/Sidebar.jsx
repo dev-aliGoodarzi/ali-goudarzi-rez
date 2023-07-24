@@ -26,6 +26,7 @@ import { BsDiscord } from "react-icons/bs";
 import ReactTooltip from "react-tooltip";
 import LinkCustom from "./LinkCustom/LinkCustom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTeamspeak } from "react-icons/fa";
 //bottom
 
 // Images
@@ -107,10 +108,24 @@ const Sidebar = ({ themeColor }) => {
       isBackgroundColored: false,
     },
     {
+      id: "l-13",
+      to: "/my-ts1",
+      dataTip: "my TS 2",
+      icon: <FaTeamspeak color="inherit" />,
+      isBackgroundColored: false,
+    },
+    {
       id: "l-12",
       to: "/my-discord",
       dataTip: "my discord Account",
       icon: <BsDiscord color="inherit" />,
+      isBackgroundColored: false,
+    },
+    {
+      id: "l-14",
+      to: "/my-ts2",
+      dataTip: "my TS 1",
+      icon: <FaTeamspeak color="inherit" />,
       isBackgroundColored: false,
     },
   ]);
@@ -164,7 +179,7 @@ const Sidebar = ({ themeColor }) => {
       {isTooltipActive && <ReactTooltip />}
       <div className={styles.top} id="test">
         <div className={styles.logo} style={{ background: themeColor }}>
-          {window.innerWidth < 901 ? (
+          {window.innerWidth < 1201 ? (
             <div
               className={styles.hamburgerMenuContainer}
               ref={hamburgerMenuRef}

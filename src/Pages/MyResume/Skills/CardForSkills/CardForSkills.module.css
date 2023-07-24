@@ -49,9 +49,11 @@
     border-radius: 2rem;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .cardForSkills {
-    width: 100vw;
+    width: 95vw !important;
+    left: 2.5vw;
+    position: relative;
   }
   .cardForSkills p {
     font-size: 2rem;

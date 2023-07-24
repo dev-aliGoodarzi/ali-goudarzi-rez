@@ -170,6 +170,22 @@ const App = () => {
           }
         />
         <Route
+          path="/my-ts1"
+          element={
+            <CustomRedirection
+              selectedOutsideRoute={"ts3server://5.63.10.68?port=1125"}
+            />
+          }
+        />{" "}
+        <Route
+          path="/my-ts2"
+          element={
+            <CustomRedirection
+              selectedOutsideRoute={"ts3server://pintshare.ir"}
+            />
+          }
+        />
+        <Route
           path="/contact-me"
           element={<ContactMe themeColor={themeColor} />}
         />

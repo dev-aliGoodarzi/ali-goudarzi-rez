@@ -105,11 +105,13 @@ div {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   #root {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    overflow-x: hidden;
+    background: linear-gradient(335deg, #dc09e7, #5a2e57, #ffa806);
   }
 }

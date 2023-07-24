@@ -99,7 +99,7 @@ const AboutMe = ({ themeColor, fontSize }) => {
         <img
           src={me}
           alt="my-pic"
-          className="object-cover"
+          className="object-contain"
           onDrag={() => {
             return false;
           }}
