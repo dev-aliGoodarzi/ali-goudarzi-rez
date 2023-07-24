@@ -107,10 +107,20 @@ const Skills = ({ themeColor }) => {
       name: "Tailwind",
       value: 70,
     },
-        {
+    {
+      id: "frontEnd10",
+      name: "Redux => ToolKit + Saga",
+      value: 60,
+    },
+    {
+      id: "frontEnd9",
+      name: "Bootstrap",
+      value: 60,
+    },
+    {
       id: "frontEnd8",
       name: "Next.Js",
-      value: 20,
+      value: 40,
     },
   ];
   const backEndSkills = [
