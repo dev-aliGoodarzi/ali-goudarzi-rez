@@ -7,8 +7,9 @@
   transition: 0.5s ease opacity;
   opacity: 0;
   scroll-behavior: smooth;
-  position: relative;
+  position: absolute;
   left: 4.4rem;
+  top: 0px;
   .imageContainer {
     width: 24%;
     height: 100%;
@@ -270,6 +271,7 @@
     padding-top: 4rem;
     left: 0px !important;
     flex-direction: column;
+    position: relative;
     .imageContainer {
       position: relative;
       display: none;
