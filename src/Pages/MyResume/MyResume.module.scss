@@ -7,9 +7,8 @@
   transition: 0.5s ease opacity;
   opacity: 0;
   scroll-behavior: smooth;
-  position: absolute;
+  position: relative;
   left: 4.4rem;
-  top: 0px;
   .imageContainer {
     width: 24%;
     height: 100%;
@@ -31,6 +30,8 @@
   }
   .left {
     width: calc(100% - 24%);
+    position: absolute;
+    top: 0;
     scroll-behavior: smooth;
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -271,13 +272,13 @@
     padding-top: 4rem;
     left: 0px !important;
     flex-direction: column;
-    position: relative;
     .imageContainer {
       position: relative;
       display: none;
       width: 0px;
     }
     .left {
+      position: relative;
       width: 95vw !important;
       height: 100%;
       left: 0px !important;
