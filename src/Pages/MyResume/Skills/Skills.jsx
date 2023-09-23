@@ -109,12 +109,12 @@ const Skills = ({ themeColor }) => {
     },
     {
       id: "frontEnd10",
-      name: "Redux ( ToolKit )",
+      name: "Redux( ToolKit )",
       value: 60,
     },
     {
       id: "frontEnd9",
-      name: "Bootstrap ( React )",
+      name: "ReactStrap + Bootstrap",
       value: 60,
     },
     {
@@ -164,6 +164,13 @@ const Skills = ({ themeColor }) => {
     {
       id: "backend 7",
       name: "Elastic Search",
+      value: 5,
+    },
+  ];
+  const mobileSkills = [
+    {
+      id: "mobile 1",
+      name: "React Native ",
       value: 5,
     },
   ];
@@ -305,6 +312,32 @@ const Skills = ({ themeColor }) => {
         </p>
         <div className={styles.skillsProgressContainer}>
           {databaseSkills.map((item) => {
+            return (
+              <CardForSkills
+                key={item.id}
+                item={item}
+                themeColor={themeColor}
+              />
+            );
+          })}
+        </div>
+      </div>
+      <div className={styles.selfSkills}>
+        <p className={styles.containerName}>
+          <span style={{ color: themeColor }}>Mobile Developing</span> Skills
+          <span
+            style={{
+              color: themeColor,
+              fontSize: "60%",
+              marginLeft: "2rem",
+              marginTop: "0.4rem",
+            }}
+          >
+            {`( Learning )`}
+          </span>
+        </p>
+        <div className={styles.skillsProgressContainer}>
+          {mobileSkills.map((item) => {
             return (
               <CardForSkills
                 key={item.id}
