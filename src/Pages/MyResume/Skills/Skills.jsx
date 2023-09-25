@@ -174,6 +174,18 @@ const Skills = ({ themeColor }) => {
       value: 5,
     },
   ];
+  const documentSkills = [
+    {
+      id: "document 1",
+      name: "Swagger ",
+      value: 5,
+    },
+    {
+      id: "document 1",
+      name: "StoryBook ",
+      value: 5,
+    },
+  ];
   const microServiceSkills = [
     {
       id: "backend 9",
@@ -348,6 +360,34 @@ const Skills = ({ themeColor }) => {
           })}
         </div>
       </div>
+
+      <div className={styles.selfSkills}>
+        <p className={styles.containerName}>
+          <span style={{ color: themeColor }}>Documenting </span> Skills
+          <span
+            style={{
+              color: themeColor,
+              fontSize: "60%",
+              marginLeft: "2rem",
+              marginTop: "0.4rem",
+            }}
+          >
+            {`( Learning )`}
+          </span>
+        </p>
+        <div className={styles.skillsProgressContainer}>
+          {documentSkills.map((item) => {
+            return (
+              <CardForSkills
+                key={item.id}
+                item={item}
+                themeColor={themeColor}
+              />
+            );
+          })}
+        </div>
+      </div>
+
       <div className={styles.selfSkills}>
         <p className={styles.containerName}>
           <span style={{ color: themeColor }}>Api Writing</span> Skills
